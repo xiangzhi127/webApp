@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>提交订单</title>
+    <script type="text/javascript">
+        //根据屏幕大小及dpi调整缩放和大小
+        (function() {
+            var scale = 1.0;
+            var ratio = 1;
+            if (window.devicePixelRatio >= 2) {
+                scale *= 0.5;
+                ratio *= 2;
+            }
+            var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+            document.write(text);
+            document.documentElement.style.fontSize = 50*ratio + "px";
+        })();
+    </script>
+    <meta name="keywords" content="">
+    <meta name="description" content="提交订单">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device"content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css_reset/css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/submitOrder.css" />
+</head>
+<body>
+    <header class="public-header" id="public-header">
+        <div class="ph-left">
+            <a class="go-to-back" href="javascript:history.back()" >
+                <span class="css-icon-back"></span>
+            </a>   
+        </div>
+        <div class="ph-center">
+            <h2 class="title">提交订单</h2>
+        </div>        
+    </header>
+    <div class="main">
+        <section>
+            <div class="sc-header">
+                <div class="sc-header-center">
+                    <span>合计：</span>
+                    <span class="all-money">￥0</span>
+                </div>
+                <div class="sc-header-right">
+                    <p><span>提交订单</span></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="so-body">
+                <div class="so-way">
+                    <div class="so-way-select">
+                        <div class="so-flex">
+                            <input type="radio" name="way-one" id="way-one">
+                            <label for="way-one" class="select-label2"></label>
+                            <span>餐厅吃</span>
+                        </div>  
+                        <div class="so-flex">
+                            <input type="radio" name="way-two" id="way-two">
+                            <label for="way-one" class="select-label2"></label>
+                            <span>叫外卖</span>
+                        </div>
+                        <div class="so-flex">
+                            <input type="radio" name="way-three" id="way-three">
+                            <label for="way-one" class="select-label2"></label>
+                            <span>打包走</span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="so-list" >
+                    <div class="so-info-one" style="display:none">
+                        <div class="so-info-title">
+                            <p>美味猪骨汤</p>
+                        </div>
+                        <div class="so-info-content">
+                            <div class="so-content-price">
+                                <span>单价:</span>
+                                <i class="single-price">10元</i>
+                            </div>
+                            <div class="so-content-num">
+                                <span>数量:</span>
+                                <div class="count-num">
+                                    <button class="num-0">-</button>
+                                    <input type="text" value="1">
+                                    <button class="num-1">+</button>
+                                </div>
+                            </div>
+                            <div class="so-content-all">
+                                <span>总计:</span>
+                                <i class="all-pay">10元</i>
+                            </div>
+                        </div>
+                        <div class="so-info-other">
+                            <div class="buyer-say">
+                                <span>买家留言:</span>
+                                    <input type="text" class="buyer-input" placeholder="选填">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="so-info-two" >
+                        <div class="so-info-header">
+                            <p>美味猪骨汤</p>
+                        </div>
+                        <div class="so-info-body">
+                            <div class="so-info-left">
+                                <img src="images/1.jpg" alt="">
+                            </div>
+                            <div class="so-info-right">
+                                <div class="so-right-title">
+                                    <p>这是一段描述！这是一段描述！这是一段描述！这是一段描述！这是一段描述！这是一段描述！这是一段描述！这是一段描述！</p>
+                                </div>
+                                <div class="so-price-num">
+                                    <span class="price">￥20</span>
+                                    <span class="num">x1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="so-info-other">
+                            <div class="buyer-say">
+                                <span>买家留言:</span>
+                                <input type="text" class="buyer-input" placeholder="选填">
+                            </div>
+                            <div class="pay-all-info">
+                                <span>共</span>
+                                <span class="info-num">3</span>
+                                <span>商品</span>
+                                <span>合计:</span>
+                                <span>￥</span>
+                                <span class="info-money">100</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="so-info-two" >
+                        <div class="so-info-header">
+                            <p>美味猪骨汤</p>
+                        </div>
+                        <div class="so-info-body">
+                            <div class="so-info-left">
+                                <img src="images/1.jpg" alt="">
+                            </div>
+                            <div class="so-info-right">
+                                <div class="so-right-title">
+                                    <p>这是一段描述！这是一段描述！这是一段描述！这是一段描述！这是一段描述！这是一段描述！这是一段描述！这是一段描述！</p>
+                                </div>
+                                <div class="so-price-num">
+                                    <span class="price">￥20</span>
+                                    <span class="num">x1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="so-info-other">
+                            <div class="buyer-say">
+                                <span>买家留言:</span>
+                                <input type="text" class="buyer-input" placeholder="选填">
+                            </div>
+                            <div class="pay-all-info">
+                                <span>共</span>
+                                <span class="info-num">3</span>
+                                <span>商品</span>
+                                <span>合计:</span>
+                                <span>￥</span>
+                                <span class="info-money">100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

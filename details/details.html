@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>美食详情</title>
+    <script type="text/javascript">
+        //根据屏幕大小及dpi调整缩放和大小
+        (function() {
+            var scale = 1.0;
+            var ratio = 1;
+            if (window.devicePixelRatio >= 2) {
+                scale *= 0.5;
+                ratio *= 2;
+            }
+            var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+            document.write(text);
+            document.documentElement.style.fontSize = 50*ratio + "px";
+        })();
+    </script>
+    <meta name="keywords" content="">
+    <meta name="description" content="美食详情">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device"content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css_reset/css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/details.css" />
+</head>
+<body>
+    <header class="public-header" id="public-header">
+        <div class="ph-left">
+            <a class="go-to-back" href="javascript:history.back()" >
+                <span class="css-icon-back"></span>
+            </a>   
+        </div>
+        <div class="ph-center">
+            <h2 class="title">美食详情</h2>
+        </div>
+        <div class="ph-right">
+            <a class="collect" href="" >
+                <span class="icon icon-meat icon-collect span-block" ></span>
+                <span class="i-mean span-block">收藏</span>
+            </a>
+            <a class="details-nav" href="">
+                <span class="icon icon-meat icon-nav span-block"></span>
+                <span class="i-mean span-block">导航</span>
+            </a>
+        </div>         
+        <div class="nav-dropdown" style="display: none">
+            <ul class="details-ul">
+                <li class="details-li">
+                    <a class="details-a" href="javascript:;">
+                        <span class="icon icon-meat icon-index"></span>
+                        <span class="i-mean">首页</span>
+                    </a>
+                </li> 
+                <li class="details-li">
+                    <a class="details-a" href="javascript:;">
+                        <span class="icon  icon-meat icon-bus"></span>
+                        <span class="i-mean">购物车</span>
+                    </a>
+                </li>
+                <li class="details-li">
+                    <a  class="details-a" href="javascript:;">
+                        <span class="icon icon-meat icon-share"></span>
+                        <span class="i-mean">分享</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="details" class="main">
+        <section class="d-product-buy">
+            <div class="d-img">
+                <img src="images/2.jpg" alt="">
+                <div class="d-bg">
+                    <h1 class="d-title">美味猪骨汤</h1>
+                    <p class="d-content">团购满10份，免费送1份</p>
+                </div>
+            </div>
+            <div class="d-container">
+                <div class="d-price">
+                    <strong>1元</strong>
+                    <del>￥2元</del>
+                </div>
+                <div class="d-add-shoppingCart">
+                    <a href="../shoppingCart/shoppingCart.html">加入购物车</a>
+                </div>
+                <div class="d-buy-now">
+                    <a href="../submit/submitOrder.html">现在购买</a>
+                </div>
+            </div>
+            <div class="d-app-vip" >
+                <a href="" class="d-app-links more">
+                    <span class="d-span1">减</span>
+                    <span class="d-span2">新用户1元抢购，限购1份</span>
+                </a>
+            </div>
+        </section>
+        <section class="d-product-comment" >
+            <div class="d-comment">
+                <a href="../comment/comment.html" class="d-all-comment">
+                    <span class="d-span4">
+                        <i class="css-icon-star"></i>
+                        <i class="css-icon-star"></i>
+                        <i class="css-icon-star"></i>
+                        <i class="css-icon-star"></i>
+                        <i class="css-icon-star"></i>
+                        <em class="d-score">5分</em>
+                    </span>
+                    <span class="d-span5">100人评价</span>
+                </a>
+            </div>
+            <div class="d-c-tag">
+                <a href="" class="hot-tag">
+                    <span class="">
+                        <i class="d-i-tag">味道很好</i>
+                        <i class="d-i-num">90人</i>
+                    </span>
+                </a>
+                <a href="" class="hot-tag">
+                    <span class="">
+                        <i class="d-i-tag">服务态度很好</i>
+                        <i class="d-i-num">60人</i>
+                    </span>
+                </a>
+                <a href="" class="hot-tag">
+                    <span class="">
+                        <i class="d-i-tag">环境优美</i>
+                        <i class="d-i-num">80人</i>
+                    </span>
+                </a>
+                <a href="" class="hot-tag">
+                    <span class="">
+                        <i class="d-i-tag">位置好找</i>
+                        <i class="d-i-num">60人</i>
+                    </span>
+                </a>
+                <a href="" class="hot-tag">
+                    <span class="">
+                        <i class="d-i-tag">菜量足</i>
+                        <i class="d-i-num">90人</i>
+                    </span>
+                </a>
+                <a href="" class="hot-tag">
+                    <span class="">
+                        <i class="d-i-tag">味道一般</i>
+                        <i class="d-i-num">9人</i>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <section class="d-product-info">
+            <div class="d-i-title">
+                <span class="d-span7">美食信息</span>
+            </div>
+            <div class="d-i-mes">
+                <p class="d-p1">营养猪骨汤是一道美食，俗话说“骨头的精华在汤里。”据分析，动物的骨头中含有多种对人体有营养、滋补和保健功能的物质，具有添骨髓、增血液、减缓衰老、延年益寿的保健功效。主料：扇子骨500克，直通骨1000克，尾脊骨500克，碎骨500克等。辅料：葱结1小扎，生姜1小块，酒50克，清水5公斤。</p>
+            </div>
+            <div class="d-i-more">
+                <a href="../details-img/details-img.html" class="d-info-more">
+                    <span>图文详细解说</span>
+                </a>
+            </div>
+        </section>
+        <section class="d-xl-tip">
+            <div class="d-div-tip">
+                <span class="d-span-title">享乐提醒你</span>
+            </div>
+            <div class="d-div-content">
+                <ul class="d-ul">
+                    <li>本餐厅提供餐巾纸</li>
+                    <li>本餐厅提供免费茶水</li>
+                    <li>请各位顾客不要浪费食物，珍惜食物</li>
+                </ul>
+            </div>
+        </section>
+    </div>

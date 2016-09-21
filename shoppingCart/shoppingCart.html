@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>购物车</title>
+    <script type="text/javascript">
+        //根据屏幕大小及dpi调整缩放和大小
+        (function() {
+            var scale = 1.0;
+            var ratio = 1;
+            if (window.devicePixelRatio >= 2) {
+                scale *= 0.5;
+                ratio *= 2;
+            }
+            var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+            document.write(text);
+            document.documentElement.style.fontSize = 50*ratio + "px";
+        })();
+    </script>
+    <meta name="keywords" content="">
+    <meta name="description" content="购物车">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device"content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css_reset/css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/shoppingCart.css" />
+</head>
+<body>
+    <header class="public-header" id="public-header">
+        <div class="ph-left">
+            <a class="go-to-back" href="javascript:history.back()" >
+                <span class="css-icon-back"></span>
+            </a>   
+        </div>
+        <div class="ph-center">
+            <h2 class="title">购物车</h2>
+        </div>
+        <div class="ph-right">
+            <a class="collect" href="" >
+                <span class="icon icon-meat icon-collect span-block" ></span>
+                <span class="i-mean span-block">消息</span>
+            </a>
+        </div>         
+    </header>
+    <div class="main">
+        <section>
+            <div class="sc-header">
+                <div class="sc-header-left">
+                    <input type="checkbox" class="select-all select-none" id="select-all">
+                    <label for="select-all" class="select-label"></label>
+                    <span>全选</span>
+                </div>
+                <div class="sc-header-center">
+                    <span>合计：</span>
+                    <span class="all-money">￥0</span>
+                </div>
+                <div class="sc-header-right">
+                    <p><span>结算</span>&#40;<span class="to-pay-money">0</span>&#41;</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="sc-body">
+                <ul class="sc-ul">
+                    <li>
+                        <div class="sc-body-left" >
+                            <input type="checkbox" class="select-none" id="prodcct-id">
+                            <label for="" class="select-label"></label>
+                        </div>
+                        <div class="sc-body-right" >
+                            <div class="sc-flex">
+                                <div class="sc-right-img" >
+                                    <a href="">
+                                        <img src="images/1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="sc-right-content" >
+                                    <div class="sc-content-title">
+                                        <p>什么食物</p>
+                                    </div>
+                                    <div class="sc-content-price">
+                                        <span>单价:</span>
+                                        <i class="single-price">10元</i>
+                                    </div>
+                                    <div class="sc-content-num">
+                                        <span>数量：</span>
+                                        <div class="count-num">
+                                            <button class="num-0">-</button>
+                                            <input type="text" value="1">
+                                            <button class="num-1">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="sc-content-all">
+                                        <span>总计:</span>
+                                        <i class="all-pay">10元</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <div class="sc-body-left" >
+                            <input type="checkbox" class="select-none" id="prodcct-id">
+                            <label for="" class="select-label"></label>
+                        </div>
+                        <div class="sc-body-right" >
+                            <div class="sc-flex">
+                                <div class="sc-right-img" >
+                                    <a href="">
+                                        <img src="images/1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="sc-right-content" >
+                                    <div class="sc-content-title">
+                                        <p>什么食物</p>
+                                    </div>
+                                    <div class="sc-content-price">
+                                        <span>单价:</span>
+                                        <i class="single-price">10元</i>
+                                    </div>
+                                    <div class="sc-content-num">
+                                        <span>数量：</span>
+                                        <div class="count-num">
+                                            <button class="num-0">-</button>
+                                            <input type="text" value="1">
+                                            <button class="num-1">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="sc-content-all">
+                                        <span>总计:</span>
+                                        <i class="all-pay">10元</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <div class="sc-body-left" >
+                            <input type="checkbox" class="select-none" id="prodcct-id">
+                            <label for="" class="select-label"></label>
+                        </div>
+                        <div class="sc-body-right" >
+                            <div class="sc-flex">
+                                <div class="sc-right-img" >
+                                    <a href="">
+                                        <img src="images/1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="sc-right-content" >
+                                    <div class="sc-content-title">
+                                        <p>什么食物</p>
+                                    </div>
+                                    <div class="sc-content-price">
+                                        <span>单价:</span>
+                                        <i class="single-price">10元</i>
+                                    </div>
+                                    <div class="sc-content-num">
+                                        <span>数量：</span>
+                                        <div class="count-num">
+                                            <button class="num-0">-</button>
+                                            <input type="text" value="1">
+                                            <button class="num-1">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="sc-content-all">
+                                        <span>总计:</span>
+                                        <i class="all-pay">10元</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

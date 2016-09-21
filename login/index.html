@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>用户登录 - 享乐通行证</title>
+    <meta name="keywords" content="用户登录">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" href="login-css/login.css">
+</head>
+<body>
+<input type="hidden" id="errLoginType" value="M-N">
+<input type="hidden" id="errLoginMsg" value="">
+<div id="index">
+    <header>
+        <a href="javascript:">
+            <svg class="close-btn historyBack">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </a>
+    </header>
+    <main>
+        <nav>
+            <ul id="NavTab" class="border-bottom switch-tap clearfix">
+                <li id="nomtab" class="active tab">享乐账号登录</li>
+                <li  id="tmptab" class="tab">动态密码登录</li>
+                <li class="indicator"></li>
+            </ul>
+        </nav>
+
+        <!-- 享乐账号登录 -->
+        <section id= "nomlogin" class="loginType ">
+            <form class="form" id="CommonLogin" action="/login/post" method="post" onsubmit="return false;">
+                <input name="login_type" id="nor_login_type" value="m-n" type="hidden"/>
+                <!-- 登录账号 邮箱 -->
+                <div class="form-group username">
+                    <input type="text" name="username" id="normalNum" class="border-bottom"
+                           placeholder="邮箱" autocomplete="off">
+                    <svg class="btn-close hide">
+                        <use xlink:href="#icon-del"></use>
+                    </svg>
+                </div>
+                <!-- 密码 -->
+                <div class="form-group username">
+                    <input type="password" name="password" class="border-bottom" autocomplete="off"
+                           placeholder="密码" maxlength="16">
+                    <svg class="btn-close hide">
+                        <use xlink:href="#icon-del"></use>
+                    </svg>
+                </div>
+                <div class="free-login clearfix">
+                    <input type="hidden" name="remember_me">
+                    <a href="javascript:" class="fr twoWeek">
+                        <svg class="btn-radio fix"></svg>
+                        <svg class="btn-radio hide">
+                            <use xlink:href="#icon-radio2"></use>
+                        </svg>
+                        两周内自动登录
+                    </a>
+                </div>
+                <a href="javascript:" class="login-btn disabled">
+                    登录
+                </a>
+                <div class="regist-wrap">
+                    <a href="/register/mapp">注册新用户</a>
+                        <span>|</span>
+                    <a href="/forget/getPassword">找回密码</a>
+                </div>
+            </form>
+        </section>
+
+        <!-- 动态密码登录 -->
+        <section id ='tmplogin' class="hide loginType">
+            <form class="form" id="MsgLogin" action="/login/post" method="post" onsubmit="return false;">
+                <input name="login_type" value="m-m" type="hidden"/>
+                <div class="form-group username">
+                    <input type="text" name="username" id="telNum" class="border-bottom" maxlength="11"
+                           placeholder="请输入您的手机号码" autocomplete="off">
+                    <svg class="btn-close hide">
+                        <use xlink:href="#icon-del"></use>
+                    </svg>
+                </div>
+
+                <!-- 短信验证码 -->
+                <div class="form-group msg">
+                    <input type="hidden" name="current_login_url"
+                           value="">
+                    <input type="text" class="border-bottom" name="password" autocomplete="off"
+                           placeholder="短信验证码" maxlength="6">
+                    <div class="send-pwd">
+                        <a href="javascript:" id="getCode" class="get-code">获取动态密码</a>
+                        <a href="javascript:" id="sendCode" class="hide send-code"><span>60</span>秒后重新发送</a>
+                        <a href="javascript:" id="sendCodeAgain" class="hide send-code-again">重新发送</a>
+                    </div>
+                </div>
+
+                <div class="free-login clearfix">
+                    <input type="hidden" name="remember_me">
+                    <a href="javascript:" class="fr twoWeek">
+                        <svg class="btn-radio fix"></svg>
+                        <svg class="btn-radio hide">
+                            <use xlink:href="#icon-radio2"></use>
+                        </svg>
+                        两周内自动登录
+                    </a>
+                </div>
+
+                <a href="javascript:" class="login-btn disabled">
+                    登录
+                </a>
+                <div class="regist-wrap">
+                    <a href="/register/mapp">注册新用户</a>
+                    <span>|</span>
+                    <a href="/forget/getPassword">找回密码</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</div>
+</body>
+</html>

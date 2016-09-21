@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>会员注册 - 享乐餐厅网</title>
+    <meta name="keywords" content="会员注册">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" href="register-css/app-register.css">
+</head>
+<body>
+<input id="isLogin" type="hidden" name="isLogin" value="0"/>
+<div class="page-wrap" id="index">
+    <div id="index1" class="step1 page ">
+        <header class="border-bottom">
+            <a href="javascript:">
+                <svg class="close-btn historyBack">
+                    <use xlink:href="#icon-back"></use>
+                </svg>
+            </a>
+            <h1>注册1/3</h1>
+        </header>
+        <main>
+            <div class="form">
+                <!-- 手机号码 -->
+                <div class="form-group username">
+                    <input type="tel" name="tel" id="tel" class="border-bottom"
+                           tabindex="1" placeholder="请输入手机号" autocomplete="off" maxlength="11">
+                    <svg class="btn-close hide">
+                        <use xlink:href="#icon-del"></use>
+                    </svg>
+                </div>
+                <a href="javascript:" class="submit-btn disabled" id="step1">
+                    下一步, 获取验证码
+                </a>
+            </div>
+        </main>
+    </div>
+    <div class="step2 hide page">
+        <header class="border-bottom">
+            <a href="javascript:">
+                <svg class="close-btn historyBack">
+                    <use xlink:href="#icon-back"></use>
+                </svg>
+            </a>
+            <h1>注册2/3</h1>
+        </header>
+        <main>
+            <div class="form">
+                <!-- 短信验证码 -->
+                <div class="form-group msg">
+                    <input id="telCode" type="text" class="border-bottom" tabindex="4" name="code" autocomplete="off"
+                           placeholder="短信验证码" maxlength="6">
+                    <div class="send-pwd">
+                        <a href="javascript:" id="getCode" class="get-code">获取动态密码</a>
+                        <a href="javascript:" id="sendCode" class="hide send-code"><span>60</span>秒后重新发送</a>
+                        <a href="javascript:" id="sendCodeAgain" class="hide send-code-again">重新发送</a>
+                    </div>
+                </div>
+
+                <a href="javascript:" class="submit-btn disabled" id="step2">
+                    下一步, 设置密码
+                </a>
+            </div>
+        </main>
+    </div>
+    <div class="step3 hide page">
+        <header class="border-bottom">
+            <a href="javascript:">
+                <svg class="close-btn historyBack">
+                    <use xlink:href="#icon-back"></use>
+                </svg>
+            </a>
+            <h1>注册3/3</h1>
+        </header>
+        <main>
+            <div class="form">
+                <!-- 密码 -->
+                <div class="form-group password">
+                    <input id="telPwd" type="password" name="password1" class="border-bottom" autocomplete="off" tabindex="5"
+                           placeholder="密码, 6~16位字母或数字" maxlength="16">
+                    <svg class="btn-see">
+                        <use xlink:href="#icon-see2"></use>
+                    </svg>
+                    <svg class="btn-see hide">
+                        <use xlink:href="#icon-see"></use>
+                    </svg>
+                </div>
+
+                <a href="javascript:" class="submit-btn disabled" id="step3">
+                    下一步, 注册完成
+                </a>
+            </div>
+        </main>
+    </div>
+    <div class="step4 hide page reg-sucs">
+        <header class="border-bottom">
+            <a href="javascript:">
+                <svg class="close-btn historyBack">
+                    <use xlink:href="#icon-back"></use>
+                </svg>
+            </a>
+            <h1>注册成功</h1>
+        </header>
+        <main>
+            <div class="banner"><img id="banner" data-src=""></div>
+            <h1>恭喜注册成功</h1>
+            <p>尊敬的客户，欢迎您成为享乐会员！</p>
+            <p>还等什么？快来一场说走就走的大餐吧！</p>
+            <a href="/login" id="iTimerBtn">马上出发</a>
+            <p class="timer"><span id="iTimer">15秒</span>后自动跳转至首页</p>
+        </main>
+    </div>
+</div>
+
+
+</body>
+</html>

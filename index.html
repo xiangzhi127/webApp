@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript">
+        //根据屏幕大小及dpi调整缩放和大小
+        (function() {
+            var scale = 1.0;
+            var ratio = 1;
+            if (window.devicePixelRatio >= 2) {
+                scale *= 0.5;
+                ratio *= 2;
+            }
+            var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+            document.write(text);
+            document.documentElement.style.fontSize = 50*ratio + "px";
+        })();
+    </script>
+    <title>享乐餐厅</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device"content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css_reset/css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/firstPage.css" />
+</head>
+<body>
+    <header class="public-header" id="public-header">
+        <div class="ph-left">
+            <img src="icon/logo.jpg" alt="" class="logo">  
+        </div>
+        <div class="ph-center box-search">
+            <a href="">
+                <i class="icon icon-meat icon-search"></i>
+                <span class="search-tip">搜索美食</span>
+            </a>
+        </div>
+        <div class="ph-right">
+            <a class="collect" href="user/userCenter.html" >
+                <span class="icon icon-meat icon-collect span-block" ></span>
+                <span class="i-mean span-block">我的</span>
+            </a>
+        </div>         
+    </header>
+    <div class="main" id="index" >
+        <section class="i-category-list">
+            <ul class="swipe-box clearfix">
+                 <li class="swipe-frame">
+                    <ul class="list">
+                        <li>
+                            <a href="list/list.html">
+                                <span class="btn-icon icon-zhushi" style="background: #fd9d21;">
+                                </span>
+                                <span class="word">主食</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html" >
+                                <span class="btn-icon icon-meat" style="background: #ff6767;">
+                                </span>
+                                <span class="word">美味佳肴</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html" >
+                                <span class="btn-icon icon-soul" style="background: #8a90fa;">
+                                </span>
+                                <span class="word">老火靓汤</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html" >
+                                <span class="btn-icon icon-fruit" style="background: #fed030;">
+                                </span>
+                                <span class="word">健康蔬果</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html">
+                                <span class="btn-icon icon-drink" style="background: #fd9d21;">
+                                </span>
+                                <span class="word">甜品茶饮</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html">
+                                <span class="btn-icon icon-time" style="background: #fed030;">
+                                </span>
+                                <span class="word">时间美食</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html">
+                                <span class="btn-icon icon-people" style="background: #8a90fa;">
+                                </span>
+                                <span class="word">人口角度</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html">
+                                <span class="btn-icon icon-function" style="background: #ff80c2;">
+                                   
+                                </span>
+                                <span class="word">功能角度</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html">
+                                <span class="btn-icon icon-taste" style="background: #fd9d21;">
+                                  
+                                </span>
+                                <span class="word">口味角度</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="list/list2.html">
+                                <span class="btn-icon icon-cook" style="background: #599eec;">
+                                    
+                                </span>
+                                <span class="word">做法角度</span>
+                            </a>
+                        </li> 
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="i-theme-list">
+            <div class="i-list">
+                <div class="left">
+                    <a class="react" href="way1/way1.html"  rel="nofollow">
+                        <span class="info">
+                            <strong>聚餐宴请</strong>
+                            <small>朋友家人常聚聚</small>
+                        </span>
+                        <span class="imgbox" data-src="">
+                            <img src="images/tudou-dun-niurou.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <a class="react huilife" href="way2/way2.html" rel="nofollow">
+                            <span class="info">
+                                <strong>低价超值</strong>
+                                <small>十元惠生活</small>
+                            </span>
+                            <span class="imgbox"  data-src="">
+                                <img src="images/xiangla-xiaolongxia.jpg" alt="">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="bottom">
+                        <a class="react " href="way1/way1.html"  rel="nofollow">
+                            <span class="info">
+                                <strong>工作简餐</strong>
+                                <small>实惠方便</small>
+                            </span>
+                            <span class="imgbox" data-com="unveil" data-src="">
+                                <img src="" alt="">
+                            </span>
+                        </a>
+                        <a class="react meishi" href="way2/way2.html"  data-com="countdown" data-begin="1472054400" data-end="1472130000" data-now="1472116183.62" countdown-status="hidden" rel="nofollow">
+                            <span class="info">
+                                <strong>美食抢购</strong>
+                                <small class="time-desc">距离结束</small>
+                                <span class="time-panel"><span class="span-time time-hour">00</span>:<span class="span-time time-min">00</span>:<span class="span-time time-sec">00</span></span>
+                            </span>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="i-guessyoulike-list">
+            <div class="g-header">猜你喜欢</div>
+            <ul class="guess-list" id="guess-list">
+                
+            </ul>
+        </section>
+        <a href="javascript:;" class="to-top hidden"></a>
+        <a href="tel:15811715851" class="call-phone"></a>
+    </div>
+    <textarea id="textarea" style="display:none">
+        <li class="guess-list-li">
+            <a href="details/details.html" class="react" data-id="$couponid$">
+                <div class="gue-container">
+                    <div class="gue-img">
+                        <img src="$imgsrc$" alt="">
+                    </div>
+                    <div class="gue-right">
+                        <div class="line">$line$</div>
+                        <div class="title">$title$</div>
+                        <div class="price inline">
+                            <span class="strong-p">$price$</span>
+                            <span class="strong-color">$dw$</span> 
+                            <span class="satifaction">$satifaction$</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </textarea>
+    <!-- <script src="js/zepto.min.js"></script> -->
+    <script>
+        var JSON = {
+            url: "",
+            data: [{
+                couponid: "1",
+                imgsrc: "images/cuipi-shaoya.jpg",
+                line: "脆皮烧鸭",
+                title: "脆皮烧鸭是素食菜谱之一，以鸭肉为制作主料，脆皮烧鸭的烹饪技巧以烤菜为主，口感：色泽金黄，酥脆鲜香，佐酒下饭，二者皆佳",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "2",
+                imgsrc: "images/baiqieji.jpg",
+                line: "白切鸡",
+                title: "白切鸡是一道色香味俱全的特色传统名肴，属于粤菜系鸡肴中最普通的一种，属浸鸡类，以其制作简易，刚熟不烂，不加配料且保持原味为特点",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "3",
+                imgsrc: "images/baochao-dazhaxie.jpg",
+                line: "爆炒大闸蟹",
+                title: "秋风起,蟹脚痒,这不,立秋才刚过,就有不少人关心起大闸蟹了",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "4",
+                imgsrc: "images/danhuang-chaoxia.jpg",
+                line: "蛋黄炒虾",
+                title: "鸡蛋炒虾仁是以鸡蛋和虾仁为主材料的菜品,烹饪方式为“炒”制,口味鲜香可口",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "5",
+                imgsrc: "images/heijiao-niupai.jpg",
+                line: "黑椒牛排",
+                title: "黑椒牛排是一道西餐，主要食材是牛排和黑胡椒，主要烹饪工艺是煎",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "6",
+                imgsrc: "images/hongshao-jizhuajpg.jpg",
+                line: "红烧鸡爪",
+                title: "红烧鸡爪营养丰富,含有丰富的蛋白质,胶原蛋白,氨基酸,维生素以及多种矿物质",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "7",
+                imgsrc: "images/hongshao-niunan.jpg",
+                line: "红烧牛腩",
+                title: "主要食材是牛腩。卤汁乳白稠浓，肉质肥嫩，滋味鲜美。营养价值较高，一般人都适合食用",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "8",
+                imgsrc: "images/hongshao-yu.jpg",
+                line: "红烧鱼",
+                title: "不仅味道鲜美，而且营养价值极高。其蛋白质含量为猪肉的2倍，且属于优质蛋白，人体吸收率高",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "9",
+                imgsrc: "images/jiangyatui.jpg",
+                line: "酱鸭腿",
+                title: "酱鸭腿以鸭腿和香辛料为主要食材，口感紧实，耐咀嚼；具有经酱卤制后的良好的滋味与气味，无异味",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "10",
+                imgsrc: "images/jixiongrou.jpg",
+                line: "鸡胸肉",
+                title: "肉质细嫩,滋味鲜美,营养丰富,能滋补养身",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "11",
+                imgsrc: "images/laziji.jpg",
+                line: "辣子鸡",
+                title: "它看上去色泽亮丽,吃起来酥香爽脆,回味无穷",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            }]
+        };
+        String.prototype.temp = function(obj) {
+            return this.replace(/\$\w+\$/gi, function(matchs) {
+                var returns = obj[matchs.replace(/\$/g, "")];       
+                return (returns + "") == "undefined"? "": returns;
+            });
+        };
+        var t=document.getElementById('textarea');
+        var ul=document.getElementById('guess-list');
+        var htmlList = ''
+            // textarea中的模板HTML
+            , htmlTemp = t.value;
+
+        JSON.data.forEach(function(object) {
+            htmlList += htmlTemp.temp(object);
+        });
+        ul.innerHTML = htmlList;
+    </script>
+</body>
+</html>

@@ -1,0 +1,1591 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="city-select-css/city-select.css" />
+	<title>享乐餐厅网</title>
+    <meta name="keywords" content="享乐餐厅网">
+    <meta name="description" content="享乐餐厅网">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device"content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-retina.png"> -->
+    <script>
+    var m2015Config = m2015Config || {};
+    m2015Config.cdnHost = "//img1.tuniucdn.com";
+    m2015Config.timeStamp="2016082409";
+
+    var pageFlag = "";
+    document.cookie = "page_flag="+pageFlag+";domain=.tuniu.com;path=/;";
+	</script>
+	<!-- <script src="../global/fta.min.js"></script> -->
+	<script>
+	    // window.FTA && window.FTA("","http://m.tuniu.com/m2015/city/city/index","","");
+	</script>
+</head>
+<body>
+    <header class="header-box fixed" id="header">
+        <span class="header-back" onclick='javascript:if(document.referrer.indexOf("tuniu.com")>=0){history.go(-1);}else{window.location="/";}'>
+            <i class="icon-title-back effect-active"></i>
+        </span>
+    	<h1>选择城市</h1>
+    </header>
+            <!-- contain start -->
+    <div class="wrapper">
+    	<!-- loadding 区块-->
+		<div class="loading bg-white" id="J-loadding" style="z-index: 103;margin-top:-46px; display: none;">
+			<div class="spinner" style="top: 37%;">
+				<div class="spinner-inner">
+				</div>
+				<div class="cutout"></div>
+				<div class="s-circle"></div>
+			</div>
+			<div class="loading-logo" style="top: 39%;"><span class="icon-logo"></span></div>
+		</div>
+		<!--搜索区块-->
+		<div class="search-container" id="J-city-root">
+			<div class="search-box">
+				<div class="search-input-ctn">
+					<i class="icon-search4 search_btn"></i>
+					<input type="search" class="search_input" id="searchContPop" placeholder="南京/nanjing/nj" name="q">
+					<i class="icon-delete search-clear"></i>
+				</div>
+				<span class="cancel">取消</span>
+			</div>
+			<div class="search-suggest" id="J-suggest-list">
+			</div>
+		<article class="city-content" id="cityEl">
+		<!--定位城市区块  -->
+			<div class="special-title" data-index="定位">根据您的定位推荐</div>
+			<ul class="textContainer" id="J-position-ctn">
+				<p class="icon-logo is-positioning">正在获取您的位置</p>
+			</ul>
+			<section id="J-history-city">
+			</section>
+		<!--热门城市区块-->
+		<div class="special-title" data-index="定位">热门城市</div>
+			<ul class="textContainer">
+				<li class="textItem J-city_item"  data-code="200" data-name="北京" data-letter="bj">
+					<div class="textItemTitle thin-border">北京</div>
+				</li>
+				<li class="textItem J-city_item"  data-code="1602" data-name="南京" data-letter="nj">
+					<div class="textItemTitle thin-border">南京					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="2500" data-name="上海" data-letter="sh">
+					<div class="textItemTitle thin-border">
+						上海					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="3402" data-name="杭州" data-letter="hz">
+					<div class="textItemTitle thin-border">
+						杭州					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="1615" data-name="苏州" data-letter="sz">
+					<div class="textItemTitle thin-border">
+						苏州					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="3000" data-name="天津" data-letter="tj">
+					<div class="textItemTitle thin-border">
+						天津					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="619" data-name="深圳" data-letter="shz">
+					<div class="textItemTitle thin-border">
+						深圳					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="1619" data-name="无锡" data-letter="wx">
+					<div class="textItemTitle thin-border">
+						无锡					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="2802" data-name="成都" data-letter="cd">
+					<div class="textItemTitle thin-border">
+						成都					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="300" data-name="重庆" data-letter="cq">
+					<div class="textItemTitle thin-border">
+						重庆					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="1402" data-name="武汉" data-letter="wh">
+					<div class="textItemTitle thin-border">
+						武汉					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="1902" data-name="沈阳" data-letter="sy">
+					<div class="textItemTitle thin-border">
+						沈阳					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="602" data-name="广州" data-letter="gz">
+					<div class="textItemTitle thin-border">
+						广州					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="3415" data-name="宁波" data-letter="nb">
+					<div class="textItemTitle thin-border">
+						宁波					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="2702" data-name="西安" data-letter="xa">
+					<div class="textItemTitle thin-border">
+						西安					</div>
+				</li>
+							<li class="textItem J-city_item"  data-code="1202" data-name="郑州" data-letter="zz">
+					<div class="textItemTitle thin-border">
+						郑州					</div>
+				</li>
+						</ul>
+		
+		<!--		城市列表区块-->
+					<div class="locationTitle" id="J-index_A">A</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="1903" data-name="鞍山" data-letter="as">
+						鞍山					</li>
+									<li class="letterName J-city_item" data-code="103" data-name="安庆" data-letter="aq">
+						安庆					</li>
+									<li class="letterName J-city_item" data-code="1203" data-name="安阳" data-letter="ay">
+						安阳					</li>
+									<li class="letterName J-city_item" data-code="3403" data-name="安吉县" data-letter="anji">
+						安吉县					</li>
+									<li class="letterName J-city_item" data-code="40674" data-name="安达市" data-letter="and">
+						安达市					</li>
+									<li class="letterName J-city_item" data-code="42153" data-name="安宁市" data-letter="ann">
+						安宁市					</li>
+									<li class="letterName J-city_item" data-code="42647" data-name="阿图什市" data-letter="ats">
+						阿图什市					</li>
+									<li class="letterName J-city_item" data-code="3108" data-name="阿拉尔" data-letter="alr">
+						阿拉尔					</li>
+									<li class="letterName J-city_item" data-code="41476" data-name="安陆市" data-letter="anl">
+						安陆市					</li>
+									<li class="letterName J-city_item" data-code="2703" data-name="安康" data-letter="ak">
+						安康					</li>
+									<li class="letterName J-city_item" data-code="40109" data-name="安国市" data-letter="agsh">
+						安国市					</li>
+									<li class="letterName J-city_item" data-code="3104" data-name="阿勒泰" data-letter="alt">
+						阿勒泰					</li>
+									<li class="letterName J-city_item" data-code="3103" data-name="阿克苏" data-letter="aks">
+						阿克苏					</li>
+									<li class="letterName J-city_item" data-code="40393" data-name="阿拉善右旗" data-letter="alsyq">
+						阿拉善右旗					</li>
+									<li class="letterName J-city_item" data-code="40392" data-name="阿拉善左旗" data-letter="alszq">
+						阿拉善左旗					</li>
+									<li class="letterName J-city_item" data-code="40374" data-name="阿尔山市" data-letter="aesh">
+						阿尔山市					</li>
+									<li class="letterName J-city_item" data-code="803" data-name="安顺" data-letter="ash">
+						安顺					</li>
+									<li class="letterName J-city_item" data-code="2815" data-name="阿坝" data-letter="ab">
+						阿坝					</li>
+									<li class="letterName J-city_item" data-code="3203" data-name="阿里" data-letter="alal">
+						阿里					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_B">B</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="200" data-name="北京" data-letter="bj">
+						北京					</li>
+									<li class="letterName J-city_item" data-code="2104" data-name="包头" data-letter="bt">
+						包头					</li>
+									<li class="letterName J-city_item" data-code="104" data-name="蚌埠" data-letter="bb">
+						蚌埠					</li>
+									<li class="letterName J-city_item" data-code="1003" data-name="保定" data-letter="bd">
+						保定					</li>
+									<li class="letterName J-city_item" data-code="1904" data-name="本溪" data-letter="bx">
+						本溪					</li>
+									<li class="letterName J-city_item" data-code="2704" data-name="宝鸡" data-letter="bji">
+						宝鸡					</li>
+									<li class="letterName J-city_item" data-code="105" data-name="亳州" data-letter="bz">
+						亳州					</li>
+									<li class="letterName J-city_item" data-code="2403" data-name="滨州" data-letter="bzh">
+						滨州					</li>
+									<li class="letterName J-city_item" data-code="42377" data-name="彬县" data-letter="binx">
+						彬县					</li>
+									<li class="letterName J-city_item" data-code="704" data-name="北海" data-letter="bh">
+						北海					</li>
+									<li class="letterName J-city_item" data-code="40665" data-name="北安市" data-letter="ban">
+						北安市					</li>
+									<li class="letterName J-city_item" data-code="40487" data-name="北票市" data-letter="bp">
+						北票市					</li>
+									<li class="letterName J-city_item" data-code="40450" data-name="北镇市" data-letter="beiz">
+						北镇市					</li>
+									<li class="letterName J-city_item" data-code="41820" data-name="北流市" data-letter="beil">
+						北流市					</li>
+									<li class="letterName J-city_item" data-code="1017" data-name="霸州市" data-letter="bzhsh">
+						霸州市					</li>
+									<li class="letterName J-city_item" data-code="40151" data-name="泊头市" data-letter="btsh">
+						泊头市					</li>
+									<li class="letterName J-city_item" data-code="42624" data-name="博乐市" data-letter="bl">
+						博乐市					</li>
+									<li class="letterName J-city_item" data-code="3304" data-name="保山" data-letter="baos">
+						保山					</li>
+									<li class="letterName J-city_item" data-code="2109" data-name="巴彦淖尔" data-letter="byze">
+						巴彦淖尔				</li>
+									<li class="letterName J-city_item" data-code="1804" data-name="白山" data-letter="bais">
+						白山					</li>
+									<li class="letterName J-city_item" data-code="804" data-name="毕节" data-letter="bij">
+						毕节					</li>
+									<li class="letterName J-city_item" data-code="703" data-name="百色" data-letter="bs">
+						百色					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_C">C</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="2802" data-name="成都" data-letter="cd">
+						成都					</li>
+									<li class="letterName J-city_item" data-code="300" data-name="重庆" data-letter="cq">
+						重庆					</li>
+									<li class="letterName J-city_item" data-code="1502" data-name="长沙" data-letter="cs">
+						长沙					</li>
+									<li class="letterName J-city_item" data-code="1802" data-name="长春" data-letter="cc">
+						长春					</li>
+									<li class="letterName J-city_item" data-code="1604" data-name="常州" data-letter="cz">
+						常州					</li>
+									<li class="letterName J-city_item" data-code="1503" data-name="常德" data-letter="chd">
+						常德					</li>
+									<li class="letterName J-city_item" data-code="107" data-name="滁州" data-letter="chuz">
+						滁州					</li>
+									<li class="letterName J-city_item" data-code="2105" data-name="赤峰" data-letter="cf">
+						赤峰					</li>
+									<li class="letterName J-city_item" data-code="2603" data-name="长治" data-letter="chzh">
+						长治					</li>
+									<li class="letterName J-city_item" data-code="1005" data-name="沧州" data-letter="caz">
+						沧州					</li>
+									<li class="letterName J-city_item" data-code="40916" data-name="巢湖市" data-letter="chaohush">
+						巢湖市					</li>
+									<li class="letterName J-city_item" data-code="109" data-name="池州" data-letter="chizh">
+						池州					</li>
+									<li class="letterName J-city_item" data-code="1006" data-name="承德" data-letter="cde">
+						承德					</li>
+									<li class="letterName J-city_item" data-code="1504" data-name="郴州" data-letter="czh">
+						郴州					</li>
+									<li class="letterName J-city_item" data-code="604" data-name="潮州" data-letter="chz">
+						潮州					</li>
+									<li class="letterName J-city_item" data-code="42210" data-name="楚雄市" data-letter="chux">
+						楚雄市					</li>
+									<li class="letterName J-city_item" data-code="42075" data-name="赤水市" data-letter="chis">
+						赤水市					</li>
+									<li class="letterName J-city_item" data-code="3107" data-name="昌吉" data-letter="cji">
+						昌吉					</li>
+									<li class="letterName J-city_item" data-code="41889" data-name="崇州市" data-letter="chongz">
+						崇州市					</li>
+									<li class="letterName J-city_item" data-code="41351" data-name="长葛市" data-letter="changg">
+						长葛市					</li>
+									<li class="letterName J-city_item" data-code="41545" data-name="常宁市" data-letter="changn">
+						常宁市					</li>
+									<li class="letterName J-city_item" data-code="40804" data-name="嵊州市" data-letter="chzhoush">
+						嵊州市					</li>
+									<li class="letterName J-city_item" data-code="41501" data-name="赤壁市" data-letter="chib">
+						赤壁市					</li>
+									<li class="letterName J-city_item" data-code="1905" data-name="朝阳" data-letter="chaoy">
+						朝阳					</li>
+									<li class="letterName J-city_item" data-code="41797" data-name="岑溪市" data-letter="cenx">
+						岑溪市					</li>
+									<li class="letterName J-city_item" data-code="40955" data-name="长乐市" data-letter="changle">
+						长乐市					</li>
+									<li class="letterName J-city_item" data-code="40799" data-name="长兴县" data-letter="changxing">
+						长兴县					</li>
+									<li class="letterName J-city_item" data-code="40781" data-name="慈溪市" data-letter="cixish">
+						慈溪市					</li>
+									<li class="letterName J-city_item" data-code="1637" data-name="常熟" data-letter="chs">
+						常熟					</li>
+									<li class="letterName J-city_item" data-code="3204" data-name="昌都" data-letter="chdu">
+						昌都					</li>
+									<li class="letterName J-city_item" data-code="40414" data-name="长海县" data-letter="chh">
+						长海县					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_D">D</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="1906" data-name="大连" data-letter="dl">
+						大连					</li>
+									<li class="letterName J-city_item" data-code="1104" data-name="大庆" data-letter="dq">
+						大庆					</li>
+									<li class="letterName J-city_item" data-code="2604" data-name="大同" data-letter="dt">
+						大同					</li>
+									<li class="letterName J-city_item" data-code="606" data-name="东莞" data-letter="dg">
+						东莞					</li>
+									<li class="letterName J-city_item" data-code="1907" data-name="丹东" data-letter="dd">
+						丹东					</li>
+									<li class="letterName J-city_item" data-code="2406" data-name="东营" data-letter="dy">
+						东营					</li>
+									<li class="letterName J-city_item" data-code="2405" data-name="德州" data-letter="dz">
+						德州					</li>
+									<li class="letterName J-city_item" data-code="2804" data-name="达州" data-letter="daz">
+						达州					</li>
+									<li class="letterName J-city_item" data-code="2805" data-name="德阳" data-letter="dey">
+						德阳					</li>
+									<li class="letterName J-city_item" data-code="3306" data-name="大理" data-letter="dlz">
+						大理					</li>
+									<li class="letterName J-city_item" data-code="504" data-name="定西" data-letter="dxi">
+						定西					</li>
+									<li class="letterName J-city_item" data-code="40549" data-name="敦化市" data-letter="dunh">
+						敦化市					</li>
+									<li class="letterName J-city_item" data-code="40546" data-name="大安市" data-letter="dan">
+						大安市					</li>
+									<li class="letterName J-city_item" data-code="40504" data-name="德惠市" data-letter="deh">
+						德惠市					</li>
+									<li class="letterName J-city_item" data-code="40480" data-name="调兵山市" data-letter="dbs">
+						调兵山市					</li>
+									<li class="letterName J-city_item" data-code="40470" data-name="灯塔市" data-letter="dtai">
+						灯塔市					</li>
+									<li class="letterName J-city_item" data-code="40456" data-name="大石桥市" data-letter="dsq">
+						大石桥市					</li>
+									<li class="letterName J-city_item" data-code="40442" data-name="东港市" data-letter="dongg">
+						东港市					</li>
+									<li class="letterName J-city_item" data-code="42128" data-name="都匀市" data-letter="duy">
+						都匀市					</li>
+									<li class="letterName J-city_item" data-code="41886" data-name="都江堰市" data-letter="djy">
+						都江堰市					</li>
+									<li class="letterName J-city_item" data-code="41375" data-name="邓州市" data-letter="dengz">
+						邓州市					</li>
+									<li class="letterName J-city_item" data-code="40811" data-name="东阳市" data-letter="dongyangsh">
+						东阳市					</li>
+									<li class="letterName J-city_item" data-code="41453" data-name="当阳市" data-letter="dangy">
+						当阳市					</li>
+									<li class="letterName J-city_item" data-code="41441" data-name="丹江口市" data-letter="djk">
+						丹江口市					</li>
+									<li class="letterName J-city_item" data-code="41433" data-name="大冶市" data-letter="dazhi">
+						大冶市					</li>
+									<li class="letterName J-city_item" data-code="911" data-name="东方市" data-letter="dongf">
+						东方市					</li>
+									<li class="letterName J-city_item" data-code="41805" data-name="东兴市" data-letter="dongx">
+						东兴市					</li>
+									<li class="letterName J-city_item" data-code="41121" data-name="德兴市" data-letter="dexing">
+						德兴市					</li>
+									<li class="letterName J-city_item" data-code="3432" data-name="德清县" data-letter="deqin">
+						德清县					</li>
+									<li class="letterName J-city_item" data-code="1645" data-name="丹阳市" data-letter="danyang">
+						丹阳市					</li>
+									<li class="letterName J-city_item" data-code="40746" data-name="大丰市" data-letter="dafsh">
+						大丰市					</li>
+									<li class="letterName J-city_item" data-code="40745" data-name="东台市" data-letter="dongtsh">
+						东台市					</li>
+									<li class="letterName J-city_item" data-code="40108" data-name="定州市" data-letter="dzhsh">
+						定州市					</li>
+									<li class="letterName J-city_item" data-code="505" data-name="敦煌市" data-letter="dh">
+						敦煌市					</li>
+									<li class="letterName J-city_item" data-code="1105" data-name="大兴安岭" data-letter="dxal">
+						大兴安岭					</li>
+									<li class="letterName J-city_item" data-code="3314" data-name="德宏" data-letter="dehong">
+						德宏					</li>
+									<li class="letterName J-city_item" data-code="42031" data-name="稻城县" data-letter="dch">
+						稻城县					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_E">E</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="2106" data-name="鄂尔多斯" data-letter="eeds">
+						鄂尔多斯					</li>
+									<li class="letterName J-city_item" data-code="1403" data-name="恩施" data-letter="es">
+						恩施					</li>
+									<li class="letterName J-city_item" data-code="1404" data-name="鄂州" data-letter="ez">
+						鄂州					</li>
+									<li class="letterName J-city_item" data-code="2807" data-name="峨眉山市" data-letter="ems">
+						峨眉山市					</li>
+									<li class="letterName J-city_item" data-code="41680" data-name="恩平市" data-letter="enp">
+						恩平市					</li>
+									<li class="letterName J-city_item" data-code="40353" data-name="额尔古纳市" data-letter="eegn">
+						额尔古纳市					</li>
+									<li class="letterName J-city_item" data-code="40394" data-name="额济纳旗" data-letter="ejnq">
+						额济纳旗					</li>
+									<li class="letterName J-city_item" data-code="40379" data-name="二连浩特市" data-letter="elht">
+						二连浩特市					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_F">F</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="402" data-name="福州" data-letter="fz">
+						福州					</li>
+									<li class="letterName J-city_item" data-code="607" data-name="佛山" data-letter="fs">
+						佛山					</li>
+									<li class="letterName J-city_item" data-code="108" data-name="阜阳" data-letter="fy">
+						阜阳					</li>
+									<li class="letterName J-city_item" data-code="1908" data-name="抚顺" data-letter="fus">
+						抚顺					</li>
+									<li class="letterName J-city_item" data-code="1703" data-name="抚州" data-letter="fuz">
+						抚州					</li>
+									<li class="letterName J-city_item" data-code="1516" data-name="凤凰县" data-letter="fhuang">
+						凤凰县					</li>
+									<li class="letterName J-city_item" data-code="40292" data-name="汾阳市" data-letter="fyang">
+						汾阳市					</li>
+									<li class="letterName J-city_item" data-code="40647" data-name="富锦市" data-letter="fjin">
+						富锦市					</li>
+									<li class="letterName J-city_item" data-code="40443" data-name="凤城市" data-letter="fengc">
+						凤城市					</li>
+									<li class="letterName J-city_item" data-code="42129" data-name="福泉市" data-letter="fuq">
+						福泉市					</li>
+									<li class="letterName J-city_item" data-code="42617" data-name="阜康市" data-letter="fuk">
+						阜康市					</li>
+									<li class="letterName J-city_item" data-code="41268" data-name="登封市" data-letter="fd">
+						登封市					</li>
+									<li class="letterName J-city_item" data-code="41026" data-name="福鼎市" data-letter="fuding">
+						福鼎市					</li>
+									<li class="letterName J-city_item" data-code="1909" data-name="阜新" data-letter="fx">
+						阜新					</li>
+									<li class="letterName J-city_item" data-code="41025" data-name="福安市" data-letter="fuan">
+						福安市					</li>
+									<li class="letterName J-city_item" data-code="40954" data-name="福清市" data-letter="fuqing">
+						福清市					</li>
+									<li class="letterName J-city_item" data-code="1716" data-name="丰城市" data-letter="fengcheng">
+						丰城市					</li>
+									<li class="letterName J-city_item" data-code="3438" data-name="奉化市" data-letter="fenghuash">
+						奉化市					</li>
+									<li class="letterName J-city_item" data-code="3433" data-name="富阳区" data-letter="fuyangsh">
+						富阳区					</li>
+									<li class="letterName J-city_item" data-code="40372" data-name="丰镇市" data-letter="fzs">
+						丰镇市					</li>
+									<li class="letterName J-city_item" data-code="40645" data-name="抚远县" data-letter="fyuan">
+						抚远县					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_G">G</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="602" data-name="广州" data-letter="gz">
+						广州					</li>
+									<li class="letterName J-city_item" data-code="802" data-name="贵阳" data-letter="gy">
+						贵阳					</li>
+									<li class="letterName J-city_item" data-code="705" data-name="桂林" data-letter="gl">
+						桂林					</li>
+									<li class="letterName J-city_item" data-code="1704" data-name="赣州" data-letter="gaz">
+						赣州					</li>
+									<li class="letterName J-city_item" data-code="2810" data-name="广元" data-letter="gyu">
+						广元					</li>
+									<li class="letterName J-city_item" data-code="41480" data-name="公安县" data-letter="gan">
+						公安县					</li>
+									<li class="letterName J-city_item" data-code="40184" data-name="古交市" data-letter="gjiao">
+						古交市					</li>
+									<li class="letterName J-city_item" data-code="40219" data-name="高平市" data-letter="gping">
+						高平市					</li>
+									<li class="letterName J-city_item" data-code="41181" data-name="高密市" data-letter="gmi">
+						高密市					</li>
+									<li class="letterName J-city_item" data-code="40518" data-name="公主岭市" data-letter="gzl">
+						公主岭市					</li>
+									<li class="letterName J-city_item" data-code="40455" data-name="盖州市" data-letter="gaiz">
+						盖州市					</li>
+									<li class="letterName J-city_item" data-code="42220" data-name="个旧市" data-letter="gej">
+						个旧市					</li>
+									<li class="letterName J-city_item" data-code="41911" data-name="广汉市" data-letter="guangh">
+						广汉市					</li>
+									<li class="letterName J-city_item" data-code="41504" data-name="广水市" data-letter="gsh">
+						广水市					</li>
+									<li class="letterName J-city_item" data-code="41814" data-name="桂平市" data-letter="guip">
+						桂平市					</li>
+									<li class="letterName J-city_item" data-code="41693" data-name="高州市" data-letter="gaoz">
+						高州市					</li>
+									<li class="letterName J-city_item" data-code="41652" data-name="南雄市" data-letter="gaox">
+						南雄市					</li>
+									<li class="letterName J-city_item" data-code="41060" data-name="贵溪市" data-letter="guixi">
+						贵溪市					</li>
+									<li class="letterName J-city_item" data-code="41099" data-name="高安市" data-letter="gaoan">
+						高安市					</li>
+									<li class="letterName J-city_item" data-code="40354" data-name="根河市" data-letter="ghe">
+						根河市					</li>
+									<li class="letterName J-city_item" data-code="40751" data-name="高邮市" data-letter="gaoysh">
+						高邮市					</li>
+									<li class="letterName J-city_item" data-code="40110" data-name="高碑店市" data-letter="gbdsh">
+						高碑店市					</li>
+									<li class="letterName J-city_item" data-code="40023" data-name="藁城市" data-letter="gchsh">
+						藁城市					</li>
+									<li class="letterName J-city_item" data-code="42571" data-name="格尔木市" data-letter="gem">
+						格尔木市					</li>
+									<li class="letterName J-city_item" data-code="2203" data-name="固原" data-letter="guyu">
+						固原					</li>
+									<li class="letterName J-city_item" data-code="506" data-name="甘南" data-letter="gn">
+						甘南					</li>
+									<li class="letterName J-city_item" data-code="2812" data-name="甘孜" data-letter="gzi">
+						甘孜					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_H">H</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="3402" data-name="杭州" data-letter="hz">
+						杭州					</li>
+									<li class="letterName J-city_item" data-code="102" data-name="合肥" data-letter="hf">
+						合肥					</li>
+									<li class="letterName J-city_item" data-code="902" data-name="海口" data-letter="hk">
+						海口					</li>
+									<li class="letterName J-city_item" data-code="1102" data-name="哈尔滨" data-letter="heb">
+						哈尔滨					</li>
+									<li class="letterName J-city_item" data-code="2102" data-name="呼和浩特" data-letter="hhht">
+						呼和浩特					</li>
+									<li class="letterName J-city_item" data-code="609" data-name="惠州" data-letter="hzh">
+						惠州					</li>
+									<li class="letterName J-city_item" data-code="1505" data-name="衡阳" data-letter="hy">
+						衡阳					</li>
+									<li class="letterName J-city_item" data-code="112" data-name="淮南" data-letter="hn">
+						淮南					</li>
+									<li class="letterName J-city_item" data-code="2107" data-name="呼伦贝尔" data-letter="hlbe">
+						呼伦贝尔					</li>
+									<li class="letterName J-city_item" data-code="1606" data-name="淮安" data-letter="ha">
+						淮安					</li>
+									<li class="letterName J-city_item" data-code="3409" data-name="湖州" data-letter="huz">
+						湖州					</li>
+									<li class="letterName J-city_item" data-code="113" data-name="黄山" data-letter="hsh">
+						黄山					</li>
+									<li class="letterName J-city_item" data-code="1008" data-name="邯郸" data-letter="hd">
+						邯郸					</li>
+									<li class="letterName J-city_item" data-code="2407" data-name="菏泽" data-letter="hze">
+						菏泽					</li>
+									<li class="letterName J-city_item" data-code="1009" data-name="衡水" data-letter="hs">
+						衡水					</li>
+									<li class="letterName J-city_item" data-code="2705" data-name="汉中" data-letter="haz">
+						汉中					</li>
+									<li class="letterName J-city_item" data-code="1405" data-name="黄冈" data-letter="hg">
+						黄冈					</li>
+									<li class="letterName J-city_item" data-code="1406" data-name="黄石" data-letter="hshi">
+						黄石					</li>
+									<li class="letterName J-city_item" data-code="1506" data-name="怀化" data-letter="hh">
+						怀化					</li>
+									<li class="letterName J-city_item" data-code="2307" data-name="海北" data-letter="haib">
+						海北					</li>
+									<li class="letterName J-city_item" data-code="2309" data-name="黄南" data-letter="hnan">
+						黄南					</li>
+									<li class="letterName J-city_item" data-code="40248" data-name="河津市" data-letter="hjin">
+						河津市					</li>
+									<li class="letterName J-city_item" data-code="41171" data-name="海阳市" data-letter="haiy">
+						海阳市					</li>
+									<li class="letterName J-city_item" data-code="40676" data-name="海伦市" data-letter="hlun">
+						海伦市					</li>
+									<li class="letterName J-city_item" data-code="1116" data-name="海林市" data-letter="hail">
+						海林市					</li>
+									<li class="letterName J-city_item" data-code="40594" data-name="虎林市" data-letter="hul">
+						虎林市					</li>
+									<li class="letterName J-city_item" data-code="40551" data-name="和龙市" data-letter="hlong">
+						和龙市					</li>
+									<li class="letterName J-city_item" data-code="1813" data-name="珲春市" data-letter="huic">
+						珲春市					</li>
+									<li class="letterName J-city_item" data-code="40511" data-name="桦甸市" data-letter="huad">
+						桦甸市					</li>
+									<li class="letterName J-city_item" data-code="40424" data-name="海城市" data-letter="haic">
+						海城市					</li>
+									<li class="letterName J-city_item" data-code="110" data-name="淮北" data-letter="hb">
+						淮北					</li>
+									<li class="letterName J-city_item" data-code="42525" data-name="合作市" data-letter="hez">
+						合作市					</li>
+									<li class="letterName J-city_item" data-code="42393" data-name="华阴市" data-letter="hyin">
+						华阴市					</li>
+									<li class="letterName J-city_item" data-code="42392" data-name="韩城市" data-letter="hcheng">
+						韩城市					</li>
+									<li class="letterName J-city_item" data-code="41979" data-name="华蓥市" data-letter="huay">
+						华蓥市					</li>
+									<li class="letterName J-city_item" data-code="41329" data-name="辉县市" data-letter="huix">
+						辉县市					</li>
+									<li class="letterName J-city_item" data-code="41619" data-name="洪江市" data-letter="hongj">
+						洪江市					</li>
+									<li class="letterName J-city_item" data-code="41477" data-name="汉川市" data-letter="hanc">
+						汉川市					</li>
+									<li class="letterName J-city_item" data-code="41484" data-name="洪湖市" data-letter="hongh">
+						洪湖市					</li>
+									<li class="letterName J-city_item" data-code="1910" data-name="葫芦岛" data-letter="hld">
+						葫芦岛					</li>
+									<li class="letterName J-city_item" data-code="41853" data-name="合山市" data-letter="heshan">
+						合山市					</li>
+									<li class="letterName J-city_item" data-code="41694" data-name="化州市" data-letter="huaz">
+						化州市					</li>
+									<li class="letterName J-city_item" data-code="41679" data-name="鹤山市" data-letter="hess">
+						鹤山市					</li>
+									<li class="letterName J-city_item" data-code="40796" data-name="海宁市" data-letter="hainingsh">
+						海宁市					</li>
+									<li class="letterName J-city_item" data-code="40279" data-name="霍州市" data-letter="huozs">
+						霍州市					</li>
+									<li class="letterName J-city_item" data-code="40278" data-name="侯马市" data-letter="hms">
+						侯马市					</li>
+									<li class="letterName J-city_item" data-code="40333" data-name="霍林郭勒市" data-letter="hlgle">
+						霍林郭勒市					</li>
+									<li class="letterName J-city_item" data-code="1605" data-name="海门市" data-letter="haimsh">
+						海门市					</li>
+									<li class="letterName J-city_item" data-code="40154" data-name="河间市" data-letter="hjsh">
+						河间市					</li>
+									<li class="letterName J-city_item" data-code="40153" data-name="黄骅市" data-letter="hhsh">
+						黄骅市					</li>
+									<li class="letterName J-city_item" data-code="3109" data-name="哈密" data-letter="hm">
+						哈密					</li>
+									<li class="letterName J-city_item" data-code="3110" data-name="和田" data-letter="ht">
+						和田					</li>
+									<li class="letterName J-city_item" data-code="2303" data-name="海西" data-letter="hx">
+						海西					</li>
+									<li class="letterName J-city_item" data-code="40342" data-name="海拉尔区" data-letter="hle">
+						海拉尔区					</li>
+									<li class="letterName J-city_item" data-code="1107" data-name="黑河" data-letter="hhe">
+						黑河					</li>
+									<li class="letterName J-city_item" data-code="707" data-name="河池" data-letter="hch">
+						河池					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_J">J</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="2402" data-name="济南" data-letter="jn">
+						济南					</li>
+									<li class="letterName J-city_item" data-code="3411" data-name="金华" data-letter="jh">
+						金华					</li>
+									<li class="letterName J-city_item" data-code="1808" data-name="吉林" data-letter="jl">
+						吉林					</li>
+									<li class="letterName J-city_item" data-code="1911" data-name="锦州" data-letter="jiz">
+						锦州					</li>
+									<li class="letterName J-city_item" data-code="3410" data-name="嘉兴" data-letter="jx">
+						嘉兴					</li>
+									<li class="letterName J-city_item" data-code="610" data-name="江门" data-letter="jm">
+						江门					</li>
+									<li class="letterName J-city_item" data-code="611" data-name="揭阳" data-letter="jy">
+						揭阳					</li>
+									<li class="letterName J-city_item" data-code="516" data-name="嘉峪关" data-letter="jyg">
+						嘉峪关					</li>
+									<li class="letterName J-city_item" data-code="2612" data-name="晋中" data-letter="jinz">
+						晋中					</li>
+									<li class="letterName J-city_item" data-code="1708" data-name="九江" data-letter="jj">
+						九江					</li>
+									<li class="letterName J-city_item" data-code="2408" data-name="济宁" data-letter="jin">
+						济宁					</li>
+									<li class="letterName J-city_item" data-code="2606" data-name="晋城" data-letter="jc">
+						晋城					</li>
+									<li class="letterName J-city_item" data-code="1206" data-name="焦作" data-letter="jz">
+						焦作					</li>
+									<li class="letterName J-city_item" data-code="508" data-name="酒泉" data-letter="jq">
+						酒泉					</li>
+									<li class="letterName J-city_item" data-code="1408" data-name="荆州" data-letter="jzh">
+						荆州					</li>
+									<li class="letterName J-city_item" data-code="1419" data-name="荆门" data-letter="jmen">
+						荆门					</li>
+									<li class="letterName J-city_item" data-code="1705" data-name="吉安" data-letter="ja">
+						吉安					</li>
+									<li class="letterName J-city_item" data-code="1706" data-name="景德镇" data-letter="jdz">
+						景德镇					</li>
+									<li class="letterName J-city_item" data-code="1207" data-name="济源" data-letter="jiy">
+						济源					</li>
+									<li class="letterName J-city_item" data-code="2424" data-name="即墨市" data-letter="jimo">
+						即墨市					</li>
+									<li class="letterName J-city_item" data-code="42422" data-name="靖边县" data-letter="jingb">
+						靖边县					</li>
+									<li class="letterName J-city_item" data-code="41481" data-name="监利县" data-letter="jli">
+						监利县					</li>
+									<li class="letterName J-city_item" data-code="40235" data-name="介休市" data-letter="jiex">
+						介休市					</li>
+									<li class="letterName J-city_item" data-code="41139" data-name="胶州市" data-letter="jiaoz">
+						胶州市					</li>
+									<li class="letterName J-city_item" data-code="40530" data-name="集安市" data-letter="jian">
+						集安市					</li>
+									<li class="letterName J-city_item" data-code="40510" data-name="蛟河市" data-letter="jhe">
+						蛟河市					</li>
+									<li class="letterName J-city_item" data-code="40502" data-name="九台市" data-letter="jt">
+						九台市					</li>
+									<li class="letterName J-city_item" data-code="42241" data-name="景洪市" data-letter="jingh">
+						景洪市					</li>
+									<li class="letterName J-city_item" data-code="42002" data-name="简阳市" data-letter="jiany">
+						简阳市					</li>
+									<li class="letterName J-city_item" data-code="41922" data-name="江油市" data-letter="jiangy">
+						江油市					</li>
+									<li class="letterName J-city_item" data-code="1517" data-name="吉首市" data-letter="jis">
+						吉首市					</li>
+									<li class="letterName J-city_item" data-code="41575" data-name="津市市" data-letter="jins">
+						津市市					</li>
+									<li class="letterName J-city_item" data-code="3420" data-name="江山市" data-letter="jiangshsh">
+						江山市					</li>
+									<li class="letterName J-city_item" data-code="1108" data-name="佳木斯" data-letter="jms">
+						佳木斯					</li>
+									<li class="letterName J-city_item" data-code="41009" data-name="建瓯市" data-letter="jianou">
+						建瓯市					</li>
+									<li class="letterName J-city_item" data-code="40989" data-name="晋江市" data-letter="jinjiang">
+						晋江市					</li>
+									<li class="letterName J-city_item" data-code="40910" data-name="界首市" data-letter="jieshou">
+						界首市					</li>
+									<li class="letterName J-city_item" data-code="1640" data-name="江阴" data-letter="jyin">
+						江阴					</li>
+									<li class="letterName J-city_item" data-code="3434" data-name="嘉善县" data-letter="jiashanx">
+						嘉善县					</li>
+									<li class="letterName J-city_item" data-code="40773" data-name="建德市" data-letter="jiandesh">
+						建德市					</li>
+									<li class="letterName J-city_item" data-code="1635" data-name="靖江市" data-letter="jjiangshi">
+						靖江市					</li>
+									<li class="letterName J-city_item" data-code="40756" data-name="句容市" data-letter="jurongsh">
+						句容市					</li>
+									<li class="letterName J-city_item" data-code="1636" data-name="金坛市" data-letter="jintanshi">
+						金坛市					</li>
+									<li class="letterName J-city_item" data-code="40173" data-name="冀州市" data-letter="jizsh">
+						冀州市					</li>
+									<li class="letterName J-city_item" data-code="40024" data-name="晋州市" data-letter="jizhsh">
+						晋州市					</li>
+									<li class="letterName J-city_item" data-code="507" data-name="金昌" data-letter="jch">
+						金昌					</li>
+									<li class="letterName J-city_item" data-code="1109" data-name="鸡西" data-letter="jix">
+						鸡西					</li>
+									<li class="letterName J-city_item" data-code="2811" data-name="九寨沟县" data-letter="jzhg">
+						九寨沟县					</li>
+									<li class="letterName J-city_item" data-code="1707" data-name="井冈山市" data-letter="jgs">
+						井冈山市					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_K">K</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="3302" data-name="昆明" data-letter="km">
+						昆明					</li>
+									<li class="letterName J-city_item" data-code="1208" data-name="开封" data-letter="kf">
+						开封					</li>
+									<li class="letterName J-city_item" data-code="3112" data-name="克拉玛依" data-letter="klmy">
+						克拉玛依					</li>
+									<li class="letterName J-city_item" data-code="40481" data-name="开原市" data-letter="kyuan">
+						开原市					</li>
+									<li class="letterName J-city_item" data-code="42221" data-name="开远市" data-letter="kaiy">
+						开远市					</li>
+									<li class="letterName J-city_item" data-code="42673" data-name="奎屯市" data-letter="kuit">
+						奎屯市					</li>
+									<li class="letterName J-city_item" data-code="41678" data-name="开平市" data-letter="kaip">
+						开平市					</li>
+									<li class="letterName J-city_item" data-code="42639" data-name="库车县" data-letter="kch">
+						库车县					</li>
+									<li class="letterName J-city_item" data-code="42628" data-name="库尔勒市" data-letter="kel">
+						库尔勒市					</li>
+									<li class="letterName J-city_item" data-code="3111" data-name="喀什" data-letter="kash">
+						喀什					</li>
+									<li class="letterName J-city_item" data-code="42111" data-name="凯里市" data-letter="kl">
+						凯里市					</li>
+									<li class="letterName J-city_item" data-code="1631" data-name="昆山市" data-letter="ksh">
+						昆山市					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_L">L</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="1210" data-name="洛阳" data-letter="luy">
+						洛阳					</li>
+									<li class="letterName J-city_item" data-code="502" data-name="兰州" data-letter="lz">
+						兰州					</li>
+									<li class="letterName J-city_item" data-code="709" data-name="柳州" data-letter="lzhou">
+						柳州					</li>
+									<li class="letterName J-city_item" data-code="807" data-name="六盘水" data-letter="lps">
+						六盘水					</li>
+									<li class="letterName J-city_item" data-code="3312" data-name="丽江" data-letter="lj">
+						丽江					</li>
+									<li class="letterName J-city_item" data-code="1912" data-name="辽阳" data-letter="liay">
+						辽阳					</li>
+									<li class="letterName J-city_item" data-code="1010" data-name="廊坊" data-letter="lfa">
+						廊坊					</li>
+									<li class="letterName J-city_item" data-code="2607" data-name="吕梁" data-letter="ll">
+						吕梁					</li>
+									<li class="letterName J-city_item" data-code="1610" data-name="连云港" data-letter="lyg">
+						连云港					</li>
+									<li class="letterName J-city_item" data-code="2411" data-name="临沂" data-letter="ly">
+						临沂					</li>
+									<li class="letterName J-city_item" data-code="404" data-name="龙岩" data-letter="lya">
+						龙岩					</li>
+									<li class="letterName J-city_item" data-code="115" data-name="六安" data-letter="la">
+						六安					</li>
+									<li class="letterName J-city_item" data-code="2409" data-name="莱芜" data-letter="lw">
+						莱芜					</li>
+									<li class="letterName J-city_item" data-code="2410" data-name="聊城" data-letter="lc">
+						聊城					</li>
+									<li class="letterName J-city_item" data-code="3414" data-name="丽水" data-letter="ls">
+						丽水					</li>
+									<li class="letterName J-city_item" data-code="2608" data-name="临汾" data-letter="lf">
+						临汾					</li>
+									<li class="letterName J-city_item" data-code="2814" data-name="泸州" data-letter="luz">
+						泸州					</li>
+									<li class="letterName J-city_item" data-code="2813" data-name="乐山" data-letter="les">
+						乐山					</li>
+									<li class="letterName J-city_item" data-code="3202" data-name="拉萨" data-letter="las">
+						拉萨					</li>
+									<li class="letterName J-city_item" data-code="1508" data-name="娄底" data-letter="ldi">
+						娄底					</li>
+									<li class="letterName J-city_item" data-code="41166" data-name="龙口市" data-letter="longk">
+						龙口市					</li>
+									<li class="letterName J-city_item" data-code="41168" data-name="莱州市" data-letter="laiz">
+						莱州市					</li>
+									<li class="letterName J-city_item" data-code="41469" data-name="京山县" data-letter="lshan">
+						京山县					</li>
+									<li class="letterName J-city_item" data-code="40213" data-name="潞城市" data-letter="luc">
+						潞城市					</li>
+									<li class="letterName J-city_item" data-code="42581" data-name="灵武市" data-letter="lwu">
+						灵武市					</li>
+									<li class="letterName J-city_item" data-code="41240" data-name="临清市" data-letter="linq">
+						临清市					</li>
+									<li class="letterName J-city_item" data-code="41167" data-name="莱阳市" data-letter="laiy">
+						莱阳市					</li>
+									<li class="letterName J-city_item" data-code="2426" data-name="莱西市" data-letter="laix">
+						莱西市					</li>
+									<li class="letterName J-city_item" data-code="40550" data-name="龙井市" data-letter="longj">
+						龙井市					</li>
+									<li class="letterName J-city_item" data-code="40536" data-name="临江市" data-letter="linj">
+						临江市					</li>
+									<li class="letterName J-city_item" data-code="40488" data-name="凌源市" data-letter="lingy">
+						凌源市					</li>
+									<li class="letterName J-city_item" data-code="40449" data-name="凌海市" data-letter="lhai">
+						凌海市					</li>
+									<li class="letterName J-city_item" data-code="42517" data-name="临夏市" data-letter="lxia">
+						临夏市					</li>
+									<li class="letterName J-city_item" data-code="41958" data-name="阆中市" data-letter="langz">
+						阆中市					</li>
+									<li class="letterName J-city_item" data-code="41362" data-name="灵宝市" data-letter="linb">
+						灵宝市					</li>
+									<li class="letterName J-city_item" data-code="41312" data-name="林州市" data-letter="linzhou">
+						林州市					</li>
+									<li class="letterName J-city_item" data-code="41624" data-name="涟源市" data-letter="liany">
+						涟源市					</li>
+									<li class="letterName J-city_item" data-code="41623" data-name="冷水江市" data-letter="lsj">
+						冷水江市					</li>
+									<li class="letterName J-city_item" data-code="41566" data-name="临湘市" data-letter="linx">
+						临湘市					</li>
+									<li class="letterName J-city_item" data-code="3413" data-name="临海市" data-letter="linhaish">
+						临海市					</li>
+									<li class="letterName J-city_item" data-code="1518" data-name="耒阳市" data-letter="leiy">
+						耒阳市					</li>
+									<li class="letterName J-city_item" data-code="40809" data-name="兰溪市" data-letter="lanxish">
+						兰溪市					</li>
+									<li class="letterName J-city_item" data-code="41529" data-name="醴陵市" data-letter="lil">
+						醴陵市					</li>
+									<li class="letterName J-city_item" data-code="1519" data-name="浏阳市" data-letter="liuy">
+						浏阳市					</li>
+									<li class="letterName J-city_item" data-code="41506" data-name="利川市" data-letter="lic">
+						利川市					</li>
+									<li class="letterName J-city_item" data-code="41461" data-name="老河口市" data-letter="lhk">
+						老河口市					</li>
+									<li class="letterName J-city_item" data-code="41753" data-name="罗定市" data-letter="luod">
+						罗定市					</li>
+									<li class="letterName J-city_item" data-code="41738" data-name="连州市" data-letter="lianz">
+						连州市					</li>
+									<li class="letterName J-city_item" data-code="41720" data-name="陆丰市" data-letter="luf">
+						陆丰市					</li>
+									<li class="letterName J-city_item" data-code="41688" data-name="雷州市" data-letter="leizhou">
+						雷州市					</li>
+									<li class="letterName J-city_item" data-code="41001" data-name="龙海市" data-letter="longhai">
+						龙海市					</li>
+									<li class="letterName J-city_item" data-code="41039" data-name="乐平市" data-letter="leping">
+						乐平市					</li>
+									<li class="letterName J-city_item" data-code="40838" data-name="龙泉市" data-letter="longquan">
+						龙泉市					</li>
+									<li class="letterName J-city_item" data-code="40792" data-name="乐清市" data-letter="leqingsh">
+						乐清市					</li>
+									<li class="letterName J-city_item" data-code="512" data-name="陇南" data-letter="ln">
+						陇南					</li>
+									<li class="letterName J-city_item" data-code="3430" data-name="临安市" data-letter="linansh">
+						临安市					</li>
+									<li class="letterName J-city_item" data-code="1630" data-name="溧阳市" data-letter="lyangshi">
+						溧阳市					</li>
+									<li class="letterName J-city_item" data-code="40026" data-name="鹿泉区" data-letter="lqsh">
+						鹿泉区					</li>
+									<li class="letterName J-city_item" data-code="3205" data-name="林芝" data-letter="linz">
+						林芝					</li>
+									<li class="letterName J-city_item" data-code="3311" data-name="临沧" data-letter="linc">
+						临沧					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_M">M</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="2816" data-name="绵阳" data-letter="my">
+						绵阳					</li>
+									<li class="letterName J-city_item" data-code="1110" data-name="牡丹江" data-letter="mdj">
+						牡丹江					</li>
+									<li class="letterName J-city_item" data-code="116" data-name="马鞍山" data-letter="mas">
+						马鞍山					</li>
+									<li class="letterName J-city_item" data-code="614" data-name="梅州" data-letter="mz">
+						梅州					</li>
+									<li class="letterName J-city_item" data-code="40660" data-name="穆棱市" data-letter="mul">
+						穆棱市					</li>
+									<li class="letterName J-city_item" data-code="40595" data-name="密山市" data-letter="mis">
+						密山市					</li>
+									<li class="letterName J-city_item" data-code="40529" data-name="梅河口市" data-letter="mhk">
+						梅河口市					</li>
+									<li class="letterName J-city_item" data-code="41913" data-name="绵竹市" data-letter="mianz">
+						绵竹市					</li>
+									<li class="letterName J-city_item" data-code="41339" data-name="孟州市" data-letter="mengz">
+						孟州市					</li>
+									<li class="letterName J-city_item" data-code="41565" data-name="汨罗市" data-letter="ml">
+						汨罗市					</li>
+									<li class="letterName J-city_item" data-code="41494" data-name="麻城市" data-letter="mac">
+						麻城市					</li>
+									<li class="letterName J-city_item" data-code="40902" data-name="明光市" data-letter="mingguang">
+						明光市					</li>
+									<li class="letterName J-city_item" data-code="40350" data-name="满洲里市" data-letter="mzl">
+						满洲里市					</li>
+									<li class="letterName J-city_item" data-code="40679" data-name="漠河县" data-letter="mh">
+						漠河县					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_N">N</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="1602" data-name="南京" data-letter="nj">
+						南京					</li>
+									<li class="letterName J-city_item" data-code="3415" data-name="宁波" data-letter="nb">
+						宁波					</li>
+									<li class="letterName J-city_item" data-code="702" data-name="南宁" data-letter="nn">
+						南宁					</li>
+									<li class="letterName J-city_item" data-code="1702" data-name="南昌" data-letter="nc">
+						南昌					</li>
+									<li class="letterName J-city_item" data-code="1211" data-name="南阳" data-letter="ny">
+						南阳					</li>
+									<li class="letterName J-city_item" data-code="1611" data-name="南通" data-letter="nt">
+						南通					</li>
+									<li class="letterName J-city_item" data-code="405" data-name="南平" data-letter="np">
+						南平					</li>
+									<li class="letterName J-city_item" data-code="406" data-name="宁德" data-letter="nd">
+						宁德					</li>
+									<li class="letterName J-city_item" data-code="2818" data-name="南充" data-letter="nch">
+						南充					</li>
+									<li class="letterName J-city_item" data-code="41520" data-name="宁乡县" data-letter="ningx">
+						宁乡县					</li>
+									<li class="letterName J-city_item" data-code="40659" data-name="宁安市" data-letter="ninga">
+						宁安市					</li>
+									<li class="letterName J-city_item" data-code="40586" data-name="讷河市" data-letter="neh">
+						讷河市					</li>
+									<li class="letterName J-city_item" data-code="40990" data-name="南安市" data-letter="nanan">
+						南安市					</li>
+									<li class="letterName J-city_item" data-code="40942" data-name="宁国市" data-letter="ningguo">
+						宁国市					</li>
+									<li class="letterName J-city_item" data-code="3437" data-name="宁海县" data-letter="ninghaix">
+						宁海县					</li>
+									<li class="letterName J-city_item" data-code="40084" data-name="南宫市" data-letter="ngsh">
+						南宫市					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_P">P</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="1913" data-name="盘锦" data-letter="pj">
+						盘锦					</li>
+									<li class="letterName J-city_item" data-code="1212" data-name="平顶山" data-letter="pds">
+						平顶山					</li>
+									<li class="letterName J-city_item" data-code="407" data-name="莆田" data-letter="pt">
+						莆田					</li>
+									<li class="letterName J-city_item" data-code="2820" data-name="攀枝花" data-letter="pzh">
+						攀枝花					</li>
+									<li class="letterName J-city_item" data-code="2425" data-name="蓬莱市" data-letter="plai">
+						蓬莱市					</li>
+									<li class="letterName J-city_item" data-code="1710" data-name="萍乡" data-letter="pxiang">
+						萍乡					</li>
+									<li class="letterName J-city_item" data-code="510" data-name="平凉" data-letter="pingl">
+						平凉					</li>
+									<li class="letterName J-city_item" data-code="3316" data-name="普洱" data-letter="pue">
+						普洱					</li>
+									<li class="letterName J-city_item" data-code="40513" data-name="磐石市" data-letter="pans">
+						磐石市					</li>
+									<li class="letterName J-city_item" data-code="40416" data-name="普兰店市" data-letter="pld">
+						普兰店市					</li>
+									<li class="letterName J-city_item" data-code="41887" data-name="彭州市" data-letter="pengz">
+						彭州市					</li>
+									<li class="letterName J-city_item" data-code="41860" data-name="凭祥市" data-letter="px">
+						凭祥市					</li>
+									<li class="letterName J-city_item" data-code="41748" data-name="普宁市" data-letter="pun">
+						普宁市					</li>
+									<li class="letterName J-city_item" data-code="3436" data-name="平湖市" data-letter="pinghush">
+						平湖市					</li>
+									<li class="letterName J-city_item" data-code="40709" data-name="邳州市" data-letter="pizhsh">
+						邳州市					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_Q">Q</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="408" data-name="泉州" data-letter="qz">
+						泉州					</li>
+									<li class="letterName J-city_item" data-code="2413" data-name="青岛" data-letter="qd">
+						青岛					</li>
+									<li class="letterName J-city_item" data-code="1111" data-name="齐齐哈尔" data-letter="qqhe">
+						齐齐哈尔					</li>
+									<li class="letterName J-city_item" data-code="1012" data-name="秦皇岛" data-letter="qhd">
+						秦皇岛					</li>
+									<li class="letterName J-city_item" data-code="3419" data-name="衢州" data-letter="quzh">
+						衢州					</li>
+									<li class="letterName J-city_item" data-code="3315" data-name="曲靖" data-letter="qjing">
+						曲靖					</li>
+									<li class="letterName J-city_item" data-code="41170" data-name="栖霞市" data-letter="qix">
+						栖霞市					</li>
+									<li class="letterName J-city_item" data-code="42589" data-name="青铜峡市" data-letter="qtx">
+						青铜峡市					</li>
+									<li class="letterName J-city_item" data-code="2423" data-name="曲阜市" data-letter="quf">
+						曲阜市					</li>
+									<li class="letterName J-city_item" data-code="41178" data-name="青州市" data-letter="qzhou">
+						青州市					</li>
+									<li class="letterName J-city_item" data-code="42058" data-name="清镇市" data-letter="qingz">
+						清镇市					</li>
+									<li class="letterName J-city_item" data-code="41888" data-name="邛崃市" data-letter="qiongl">
+						邛崃市					</li>
+									<li class="letterName J-city_item" data-code="41338" data-name="沁阳市" data-letter="qiny">
+						沁阳市					</li>
+									<li class="letterName J-city_item" data-code="710" data-name="钦州" data-letter="qzh">
+						钦州					</li>
+									<li class="letterName J-city_item" data-code="1409" data-name="潜江" data-letter="qianj">
+						潜江					</li>
+									<li class="letterName J-city_item" data-code="905" data-name="琼海市" data-letter="qiongh">
+						琼海市					</li>
+									<li class="letterName J-city_item" data-code="514" data-name="庆阳" data-letter="qyang">
+						庆阳					</li>
+									<li class="letterName J-city_item" data-code="1644" data-name="启东市" data-letter="qidsh">
+						启东市					</li>
+									<li class="letterName J-city_item" data-code="40040" data-name="迁安市" data-letter="qash">
+						迁安市					</li>
+									<li class="letterName J-city_item" data-code="42632" data-name="且末县" data-letter="qm">
+						且末县					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_R">R</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="2415" data-name="日照" data-letter="rz">
+						日照					</li>
+									<li class="letterName J-city_item" data-code="41202" data-name="荣成市" data-letter="rongc">
+						荣成市					</li>
+									<li class="letterName J-city_item" data-code="41203" data-name="乳山市" data-letter="rus">
+						乳山市					</li>
+									<li class="letterName J-city_item" data-code="42256" data-name="瑞丽市" data-letter="ruil">
+						瑞丽市					</li>
+									<li class="letterName J-city_item" data-code="42076" data-name="仁怀市" data-letter="renh">
+						仁怀市					</li>
+									<li class="letterName J-city_item" data-code="41303" data-name="汝州市" data-letter="ruz">
+						汝州市					</li>
+									<li class="letterName J-city_item" data-code="41077" data-name="瑞金市" data-letter="ruijin">
+						瑞金市					</li>
+									<li class="letterName J-city_item" data-code="41055" data-name="瑞昌市" data-letter="ruichang">
+						瑞昌市					</li>
+									<li class="letterName J-city_item" data-code="40791" data-name="瑞安市" data-letter="ruiansh">
+						瑞安市					</li>
+									<li class="letterName J-city_item" data-code="1643" data-name="如皋市" data-letter="rugsh">
+						如皋市					</li>
+									<li class="letterName J-city_item" data-code="40152" data-name="任丘市" data-letter="rqsh">
+						任丘市					</li>
+									<li class="letterName J-city_item" data-code="3207" data-name="日喀则" data-letter="rkz">
+						日喀则					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_S">S</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="2500" data-name="上海" data-letter="sh">
+						上海					</li>
+									<li class="letterName J-city_item" data-code="1615" data-name="苏州" data-letter="sz">
+						苏州					</li>
+									<li class="letterName J-city_item" data-code="619" data-name="深圳" data-letter="shz">
+						深圳					</li>
+									<li class="letterName J-city_item" data-code="1902" data-name="沈阳" data-letter="sy">
+						沈阳					</li>
+									<li class="letterName J-city_item" data-code="906" data-name="三亚" data-letter="sya">
+						三亚					</li>
+									<li class="letterName J-city_item" data-code="1002" data-name="石家庄" data-letter="sjz">
+						石家庄					</li>
+									<li class="letterName J-city_item" data-code="3422" data-name="绍兴" data-letter="sx">
+						绍兴					</li>
+									<li class="letterName J-city_item" data-code="1810" data-name="松原" data-letter="syu">
+						松原					</li>
+									<li class="letterName J-city_item" data-code="409" data-name="三明" data-letter="sm">
+						三明					</li>
+									<li class="letterName J-city_item" data-code="616" data-name="汕头" data-letter="st">
+						汕头					</li>
+									<li class="letterName J-city_item" data-code="1809" data-name="四平" data-letter="sp">
+						四平					</li>
+									<li class="letterName J-city_item" data-code="618" data-name="韶关" data-letter="sg">
+						韶关					</li>
+									<li class="letterName J-city_item" data-code="1215" data-name="商丘" data-letter="sq">
+						商丘					</li>
+									<li class="letterName J-city_item" data-code="117" data-name="宿州" data-letter="szh">
+						宿州					</li>
+									<li class="letterName J-city_item" data-code="1614" data-name="宿迁" data-letter="suq">
+						宿迁					</li>
+									<li class="letterName J-city_item" data-code="1711" data-name="上饶" data-letter="sr">
+						上饶					</li>
+									<li class="letterName J-city_item" data-code="1509" data-name="邵阳" data-letter="shy">
+						邵阳					</li>
+									<li class="letterName J-city_item" data-code="1410" data-name="十堰" data-letter="shiy">
+						十堰					</li>
+									<li class="letterName J-city_item" data-code="3116" data-name="石河子" data-letter="shzi">
+						石河子					</li>
+									<li class="letterName J-city_item" data-code="42419" data-name="神木县" data-letter="smu">
+						神木县					</li>
+									<li class="letterName J-city_item" data-code="41549" data-name="邵东县" data-letter="shaod">
+						邵东县					</li>
+									<li class="letterName J-city_item" data-code="40833" data-name="遂昌县" data-letter="suic">
+						遂昌县					</li>
+									<li class="letterName J-city_item" data-code="40821" data-name="嵊泗县" data-letter="ssi">
+						嵊泗县					</li>
+									<li class="letterName J-city_item" data-code="2707" data-name="商洛" data-letter="shangl">
+						商洛					</li>
+									<li class="letterName J-city_item" data-code="40658" data-name="绥芬河市" data-letter="sfh">
+						绥芬河市					</li>
+									<li class="letterName J-city_item" data-code="1117" data-name="尚志市" data-letter="szhi">
+						尚志市					</li>
+									<li class="letterName J-city_item" data-code="40519" data-name="双辽市" data-letter="sl">
+						双辽市					</li>
+									<li class="letterName J-city_item" data-code="40512" data-name="舒兰市" data-letter="shul">
+						舒兰市					</li>
+									<li class="letterName J-city_item" data-code="617" data-name="汕尾" data-letter="sw">
+						汕尾					</li>
+									<li class="letterName J-city_item" data-code="41912" data-name="什邡市" data-letter="shif">
+						什邡市					</li>
+									<li class="letterName J-city_item" data-code="41534" data-name="韶山市" data-letter="shaos">
+						韶山市					</li>
+									<li class="letterName J-city_item" data-code="40803" data-name="上虞区" data-letter="shangyush">
+						上虞区					</li>
+									<li class="letterName J-city_item" data-code="41485" data-name="松滋市" data-letter="songz">
+						松滋市					</li>
+									<li class="letterName J-city_item" data-code="41483" data-name="石首市" data-letter="shis">
+						石首市					</li>
+									<li class="letterName J-city_item" data-code="41703" data-name="四会市" data-letter="sih">
+						四会市					</li>
+									<li class="letterName J-city_item" data-code="41008" data-name="邵武市" data-letter="shaowu">
+						邵武市					</li>
+									<li class="letterName J-city_item" data-code="40988" data-name="石狮市" data-letter="shishi">
+						石狮市					</li>
+									<li class="letterName J-city_item" data-code="1411" data-name="随州" data-letter="suiz">
+						随州					</li>
+									<li class="letterName J-city_item" data-code="40174" data-name="深州市" data-letter="shzhsh">
+						深州市					</li>
+									<li class="letterName J-city_item" data-code="40163" data-name="三河市" data-letter="shsh">
+						三河市					</li>
+									<li class="letterName J-city_item" data-code="40085" data-name="沙河市" data-letter="shhsh">
+						沙河市					</li>
+									<li class="letterName J-city_item" data-code="42192" data-name="思茅区" data-letter="smao">
+						思茅区					</li>
+									<li class="letterName J-city_item" data-code="1412" data-name="神农架" data-letter="snj">
+						神农架					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_T">T</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="3000" data-name="天津" data-letter="tj">
+						天津					</li>
+									<li class="letterName J-city_item" data-code="2602" data-name="太原" data-letter="ty">
+						太原					</li>
+									<li class="letterName J-city_item" data-code="1013" data-name="唐山" data-letter="ts">
+						唐山					</li>
+									<li class="letterName J-city_item" data-code="3424" data-name="台州" data-letter="tz">
+						台州					</li>
+									<li class="letterName J-city_item" data-code="2110" data-name="通辽" data-letter="tli">
+						通辽					</li>
+									<li class="letterName J-city_item" data-code="118" data-name="铜陵" data-letter="tl">
+						铜陵					</li>
+									<li class="letterName J-city_item" data-code="1617" data-name="泰州" data-letter="tzh">
+						泰州					</li>
+									<li class="letterName J-city_item" data-code="2416" data-name="泰安" data-letter="ta">
+						泰安					</li>
+									<li class="letterName J-city_item" data-code="40827" data-name="天台县" data-letter="tta">
+						天台县					</li>
+									<li class="letterName J-city_item" data-code="2709" data-name="铜川" data-letter="tongc">
+						铜川					</li>
+									<li class="letterName J-city_item" data-code="41155" data-name="滕州市" data-letter="tengz">
+						滕州市					</li>
+									<li class="letterName J-city_item" data-code="40646" data-name="同江市" data-letter="tongj">
+						同江市					</li>
+									<li class="letterName J-city_item" data-code="40637" data-name="铁力市" data-letter="tiel">
+						铁力市					</li>
+									<li class="letterName J-city_item" data-code="1914" data-name="铁岭" data-letter="til">
+						铁岭					</li>
+									<li class="letterName J-city_item" data-code="40548" data-name="图们市" data-letter="tum">
+						图们市					</li>
+									<li class="letterName J-city_item" data-code="40545" data-name="洮南市" data-letter="taon">
+						洮南市					</li>
+									<li class="letterName J-city_item" data-code="3113" data-name="图木舒克" data-letter="tmsk">
+						图木舒克					</li>
+									<li class="letterName J-city_item" data-code="1407" data-name="天门" data-letter="tm">
+						天门					</li>
+									<li class="letterName J-city_item" data-code="1811" data-name="通化" data-letter="th">
+						通化					</li>
+									<li class="letterName J-city_item" data-code="41677" data-name="台山市" data-letter="tais">
+						台山市					</li>
+									<li class="letterName J-city_item" data-code="40901" data-name="天长市" data-letter="tianchang">
+						天长市					</li>
+									<li class="letterName J-city_item" data-code="40888" data-name="桐城市" data-letter="tongcheng">
+						桐城市					</li>
+									<li class="letterName J-city_item" data-code="3431" data-name="桐乡市" data-letter="txiangsh">
+						桐乡市					</li>
+									<li class="letterName J-city_item" data-code="1633" data-name="泰兴市" data-letter="taixingsh">
+						泰兴市					</li>
+									<li class="letterName J-city_item" data-code="511" data-name="天水" data-letter="tsh">
+						天水					</li>
+									<li class="letterName J-city_item" data-code="40723" data-name="通州市" data-letter="tongzhsh">
+						通州市					</li>
+									<li class="letterName J-city_item" data-code="1629" data-name="太仓市" data-letter="tcsh">
+						太仓市					</li>
+									<li class="letterName J-city_item" data-code="3117" data-name="塔城" data-letter="tch">
+						塔城					</li>
+									<li class="letterName J-city_item" data-code="3118" data-name="吐鲁番" data-letter="tlf">
+						吐鲁番					</li>
+									<li class="letterName J-city_item" data-code="3323" data-name="腾冲县" data-letter="tengchong">
+						腾冲县					</li>
+									<li class="letterName J-city_item" data-code="808" data-name="铜仁" data-letter="tr">
+						铜仁					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_W">W</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="1402" data-name="武汉" data-letter="wh">
+						武汉					</li>
+									<li class="letterName J-city_item" data-code="1619" data-name="无锡" data-letter="wx">
+						无锡					</li>
+									<li class="letterName J-city_item" data-code="3426" data-name="温州" data-letter="wz">
+						温州					</li>
+									<li class="letterName J-city_item" data-code="120" data-name="芜湖" data-letter="whu">
+						芜湖					</li>
+									<li class="letterName J-city_item" data-code="711" data-name="梧州" data-letter="wuz">
+						梧州					</li>
+									<li class="letterName J-city_item" data-code="3102" data-name="乌鲁木齐" data-letter="wlmq">
+						乌鲁木齐					</li>
+									<li class="letterName J-city_item" data-code="2417" data-name="潍坊" data-letter="wf">
+						潍坊					</li>
+									<li class="letterName J-city_item" data-code="2418" data-name="威海" data-letter="wha">
+						威海					</li>
+									<li class="letterName J-city_item" data-code="2706" data-name="渭南" data-letter="wn">
+						渭南					</li>
+									<li class="letterName J-city_item" data-code="3439" data-name="武义县" data-letter="wuy">
+						武义县					</li>
+									<li class="letterName J-city_item" data-code="41201" data-name="文登区" data-letter="wend">
+						文登区					</li>
+									<li class="letterName J-city_item" data-code="40666" data-name="五大连池市" data-letter="wdlc">
+						五大连池市					</li>
+									<li class="letterName J-city_item" data-code="40570" data-name="五常市" data-letter="wuc">
+						五常市					</li>
+									<li class="letterName J-city_item" data-code="40415" data-name="瓦房店市" data-letter="wfd">
+						瓦房店市					</li>
+									<li class="letterName J-city_item" data-code="42683" data-name="乌苏市" data-letter="wsu">
+						乌苏市					</li>
+									<li class="letterName J-city_item" data-code="3115" data-name="五家渠" data-letter="wjq">
+						五家渠					</li>
+									<li class="letterName J-city_item" data-code="41986" data-name="万源市" data-letter="wany">
+						万源市					</li>
+									<li class="letterName J-city_item" data-code="41302" data-name="舞钢市" data-letter="wgang">
+						舞钢市					</li>
+									<li class="letterName J-city_item" data-code="41328" data-name="卫辉市" data-letter="weih">
+						卫辉市					</li>
+									<li class="letterName J-city_item" data-code="41557" data-name="武冈市" data-letter="wug">
+						武冈市					</li>
+									<li class="letterName J-city_item" data-code="41495" data-name="武穴市" data-letter="wuq">
+						武穴市					</li>
+									<li class="letterName J-city_item" data-code="908" data-name="万宁市" data-letter="wann">
+						万宁市					</li>
+									<li class="letterName J-city_item" data-code="909" data-name="文昌市" data-letter="wenc">
+						文昌市					</li>
+									<li class="letterName J-city_item" data-code="910" data-name="五指山市" data-letter="wuzs">
+						五指山市					</li>
+									<li class="letterName J-city_item" data-code="41689" data-name="吴川市" data-letter="wus">
+						吴川市					</li>
+									<li class="letterName J-city_item" data-code="513" data-name="武威" data-letter="ww">
+						武威					</li>
+									<li class="letterName J-city_item" data-code="40066" data-name="武安市" data-letter="wash">
+						武安市					</li>
+									<li class="letterName J-city_item" data-code="40829" data-name="温岭市" data-letter="wenllingsh">
+						温岭市					</li>
+									<li class="letterName J-city_item" data-code="2111" data-name="乌海" data-letter="whai">
+						乌海					</li>
+									<li class="letterName J-city_item" data-code="40373" data-name="乌兰浩特市" data-letter="wlht">
+						乌兰浩特市					</li>
+									<li class="letterName J-city_item" data-code="3317" data-name="文山" data-letter="wsh">
+						文山					</li>
+									<li class="letterName J-city_item" data-code="413" data-name="武夷山市" data-letter="wys">
+						武夷山市					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_X">X</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="2702" data-name="西安" data-letter="xa">
+						西安					</li>
+									<li class="letterName J-city_item" data-code="414" data-name="厦门" data-letter="xm">
+						厦门					</li>
+									<li class="letterName J-city_item" data-code="1416" data-name="襄阳" data-letter="xy">
+						襄阳					</li>
+									<li class="letterName J-city_item" data-code="1620" data-name="徐州" data-letter="xz">
+						徐州					</li>
+									<li class="letterName J-city_item" data-code="1015" data-name="邢台" data-letter="xta">
+						邢台					</li>
+									<li class="letterName J-city_item" data-code="1216" data-name="新乡" data-letter="xx">
+						新乡					</li>
+									<li class="letterName J-city_item" data-code="2710" data-name="咸阳" data-letter="xya">
+						咸阳					</li>
+									<li class="letterName J-city_item" data-code="3318" data-name="西双版纳" data-letter="xsbn">
+						西双版纳					</li>
+									<li class="letterName J-city_item" data-code="121" data-name="宣城" data-letter="xc">
+						宣城					</li>
+									<li class="letterName J-city_item" data-code="2610" data-name="忻州" data-letter="xzh">
+						忻州					</li>
+									<li class="letterName J-city_item" data-code="1218" data-name="许昌" data-letter="xuc">
+						许昌					</li>
+									<li class="letterName J-city_item" data-code="1510" data-name="湘潭" data-letter="xtan">
+						湘潭					</li>
+									<li class="letterName J-city_item" data-code="2302" data-name="西宁" data-letter="xin">
+						西宁					</li>
+									<li class="letterName J-city_item" data-code="1417" data-name="孝感" data-letter="xgan">
+						孝感					</li>
+									<li class="letterName J-city_item" data-code="1414" data-name="咸宁" data-letter="xn">
+						咸宁					</li>
+									<li class="letterName J-city_item" data-code="41563" data-name="湘阴县" data-letter="xyin">
+						湘阴县					</li>
+									<li class="letterName J-city_item" data-code="1507" data-name="湘西" data-letter="xiangxi">
+						湘西					</li>
+									<li class="letterName J-city_item" data-code="1413" data-name="仙桃" data-letter="xtao">
+						仙桃					</li>
+									<li class="letterName J-city_item" data-code="41491" data-name="浠水县" data-letter="xis">
+						浠水县					</li>
+									<li class="letterName J-city_item" data-code="40828" data-name="仙居县" data-letter="xju">
+						仙居县					</li>
+									<li class="letterName J-city_item" data-code="3429" data-name="象山县" data-letter="xshan">
+						象山县					</li>
+									<li class="letterName J-city_item" data-code="1712" data-name="新余" data-letter="xyu">
+						新余					</li>
+									<li class="letterName J-city_item" data-code="40291" data-name="孝义市" data-letter="xyi">
+						孝义市					</li>
+									<li class="letterName J-city_item" data-code="40494" data-name="兴城市" data-letter="xcheng">
+						兴城市					</li>
+									<li class="letterName J-city_item" data-code="40407" data-name="新民市" data-letter="xmin">
+						新民市					</li>
+									<li class="letterName J-city_item" data-code="42382" data-name="兴平市" data-letter="xingp">
+						兴平市					</li>
+									<li class="letterName J-city_item" data-code="42162" data-name="宣威市" data-letter="xuanw">
+						宣威市					</li>
+									<li class="letterName J-city_item" data-code="41404" data-name="项城市" data-letter="xiangc">
+						项城市					</li>
+									<li class="letterName J-city_item" data-code="41265" data-name="荥阳市" data-letter="xingy">
+						荥阳市					</li>
+									<li class="letterName J-city_item" data-code="41266" data-name="新密市" data-letter="xinm">
+						新密市					</li>
+									<li class="letterName J-city_item" data-code="41267" data-name="新郑市" data-letter="xinz">
+						新郑市					</li>
+									<li class="letterName J-city_item" data-code="41533" data-name="湘乡市" data-letter="xiangx">
+						湘乡市					</li>
+									<li class="letterName J-city_item" data-code="41716" data-name="兴宁市" data-letter="xingn">
+						兴宁市					</li>
+									<li class="letterName J-city_item" data-code="41695" data-name="信宜市" data-letter="xiny">
+						信宜市					</li>
+									<li class="letterName J-city_item" data-code="2828" data-name="西昌市" data-letter="xch">
+						西昌市					</li>
+									<li class="letterName J-city_item" data-code="40759" data-name="兴化市" data-letter="xinghuash">
+						兴化市					</li>
+									<li class="letterName J-city_item" data-code="40708" data-name="新沂市" data-letter="xinysh">
+						新沂市					</li>
+									<li class="letterName J-city_item" data-code="40025" data-name="新乐市" data-letter="xlsh">
+						新乐市					</li>
+									<li class="letterName J-city_item" data-code="40022" data-name="辛集市" data-letter="xjsh">
+						辛集市					</li>
+									<li class="letterName J-city_item" data-code="40380" data-name="锡林浩特市" data-letter="xlht">
+						锡林浩特市					</li>
+									<li class="letterName J-city_item" data-code="3322" data-name="香格里拉县" data-letter="xgll">
+						香格里拉县					</li>
+									<li class="letterName J-city_item" data-code="42094" data-name="兴义市" data-letter="xinyi">
+						兴义市					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_Y">Y</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="40810" data-name="义乌市" data-letter="yw">
+						义乌市					</li>
+									<li class="letterName J-city_item" data-code="2711" data-name="延安" data-letter="ya">
+						延安					</li>
+									<li class="letterName J-city_item" data-code="1418" data-name="宜昌" data-letter="yic">
+						宜昌					</li>
+									<li class="letterName J-city_item" data-code="2613" data-name="运城" data-letter="yuc">
+						运城					</li>
+									<li class="letterName J-city_item" data-code="1622" data-name="扬州" data-letter="yz">
+						扬州					</li>
+									<li class="letterName J-city_item" data-code="1915" data-name="营口" data-letter="yk">
+						营口					</li>
+									<li class="letterName J-city_item" data-code="2202" data-name="银川" data-letter="ych">
+						银川					</li>
+									<li class="letterName J-city_item" data-code="1621" data-name="盐城" data-letter="yc">
+						盐城					</li>
+									<li class="letterName J-city_item" data-code="2712" data-name="榆林" data-letter="yl">
+						榆林					</li>
+									<li class="letterName J-city_item" data-code="1512" data-name="岳阳" data-letter="yy">
+						岳阳					</li>
+									<li class="letterName J-city_item" data-code="712" data-name="玉林" data-letter="yul">
+						玉林					</li>
+									<li class="letterName J-city_item" data-code="2419" data-name="烟台" data-letter="yt">
+						烟台					</li>
+									<li class="letterName J-city_item" data-code="2825" data-name="宜宾" data-letter="yb">
+						宜宾					</li>
+									<li class="letterName J-city_item" data-code="1713" data-name="宜春" data-letter="yich">
+						宜春					</li>
+									<li class="letterName J-city_item" data-code="1513" data-name="永州" data-letter="yzh">
+						永州					</li>
+									<li class="letterName J-city_item" data-code="1511" data-name="益阳" data-letter="yiy">
+						益阳					</li>
+									<li class="letterName J-city_item" data-code="1714" data-name="鹰潭" data-letter="yta">
+						鹰潭					</li>
+									<li class="letterName J-city_item" data-code="40262" data-name="原平市" data-letter="yuanp">
+						原平市					</li>
+									<li class="letterName J-city_item" data-code="40247" data-name="永济市" data-letter="yji">
+						永济市					</li>
+									<li class="letterName J-city_item" data-code="41232" data-name="禹城市" data-letter="yuchen">
+						禹城市					</li>
+									<li class="letterName J-city_item" data-code="40503" data-name="榆树市" data-letter="yus">
+						榆树市					</li>
+									<li class="letterName J-city_item" data-code="42492" data-name="玉门市" data-letter="yum">
+						玉门市					</li>
+									<li class="letterName J-city_item" data-code="41384" data-name="永城市" data-letter="yongc">
+						永城市					</li>
+									<li class="letterName J-city_item" data-code="41361" data-name="义马市" data-letter="yim">
+						义马市					</li>
+									<li class="letterName J-city_item" data-code="41293" data-name="偃师市" data-letter="yans">
+						偃师市					</li>
+									<li class="letterName J-city_item" data-code="41350" data-name="禹州市" data-letter="yuz">
+						禹州市					</li>
+									<li class="letterName J-city_item" data-code="41585" data-name="沅江市" data-letter="yuanj">
+						沅江市					</li>
+									<li class="letterName J-city_item" data-code="40812" data-name="永康市" data-letter="yongkangsh">
+						永康市					</li>
+									<li class="letterName J-city_item" data-code="1420" data-name="应城市" data-letter="yingch">
+						应城市					</li>
+									<li class="letterName J-city_item" data-code="41463" data-name="宜城市" data-letter="ychen">
+						宜城市					</li>
+									<li class="letterName J-city_item" data-code="41452" data-name="宜都市" data-letter="yid">
+						宜都市					</li>
+									<li class="letterName J-city_item" data-code="41847" data-name="宜州市" data-letter="yizhou">
+						宜州市					</li>
+									<li class="letterName J-city_item" data-code="41737" data-name="英德市" data-letter="yingd">
+						英德市					</li>
+									<li class="letterName J-city_item" data-code="41730" data-name="阳春市" data-letter="yangc">
+						阳春市					</li>
+									<li class="letterName J-city_item" data-code="40978" data-name="永安市" data-letter="yongan">
+						永安市					</li>
+									<li class="letterName J-city_item" data-code="40547" data-name="延吉市" data-letter="yj">
+						延吉市					</li>
+									<li class="letterName J-city_item" data-code="40780" data-name="余姚市" data-letter="yuyaosh">
+						余姚市					</li>
+									<li class="letterName J-city_item" data-code="1647" data-name="扬中市" data-letter="yangzhsh">
+						扬中市					</li>
+									<li class="letterName J-city_item" data-code="1632" data-name="仪征市" data-letter="yizs">
+						仪征市					</li>
+									<li class="letterName J-city_item" data-code="40351" data-name="牙克石市" data-letter="yks">
+						牙克石市					</li>
+									<li class="letterName J-city_item" data-code="1628" data-name="宜兴市" data-letter="yxsh">
+						宜兴市					</li>
+									<li class="letterName J-city_item" data-code="42674" data-name="伊宁县" data-letter="yn">
+						伊宁县					</li>
+									<li class="letterName J-city_item" data-code="2310" data-name="玉树" data-letter="ysh">
+						玉树					</li>
+									<li class="letterName J-city_item" data-code="1115" data-name="伊春" data-letter="ychun">
+						伊春					</li>
+									<li class="letterName J-city_item" data-code="40825" data-name="玉环县" data-letter="yuhuanx">
+						玉环县					</li>
+							</ul>
+					<div class="locationTitle" id="J-index_Z">Z</div>
+			<ul class="letterCityList">
+									<li class="letterName J-city_item" data-code="1202" data-name="郑州" data-letter="zz">
+						郑州					</li>
+									<li class="letterName J-city_item" data-code="811" data-name="遵义" data-letter="zy">
+						遵义					</li>
+									<li class="letterName J-city_item" data-code="1514" data-name="张家界" data-letter="zjj">
+						张家界					</li>
+									<li class="letterName J-city_item" data-code="628" data-name="珠海" data-letter="zh">
+						珠海					</li>
+									<li class="letterName J-city_item" data-code="627" data-name="中山" data-letter="zs">
+						中山					</li>
+									<li class="letterName J-city_item" data-code="415" data-name="漳州" data-letter="zhzh">
+						漳州					</li>
+									<li class="letterName J-city_item" data-code="1515" data-name="株洲" data-letter="zhz">
+						株洲					</li>
+									<li class="letterName J-city_item" data-code="1016" data-name="张家口" data-letter="zjk">
+						张家口					</li>
+									<li class="letterName J-city_item" data-code="625" data-name="湛江" data-letter="zj">
+						湛江					</li>
+									<li class="letterName J-city_item" data-code="2421" data-name="淄博" data-letter="zb">
+						淄博					</li>
+									<li class="letterName J-city_item" data-code="1626" data-name="镇江" data-letter="zhj">
+						镇江					</li>
+									<li class="letterName J-city_item" data-code="3427" data-name="舟山" data-letter="zsh">
+						舟山					</li>
+									<li class="letterName J-city_item" data-code="2420" data-name="枣庄" data-letter="zzh">
+						枣庄					</li>
+									<li class="letterName J-city_item" data-code="515" data-name="张掖" data-letter="zhy">
+						张掖					</li>
+									<li class="letterName J-city_item" data-code="2826" data-name="自贡" data-letter="zg">
+						自贡					</li>
+									<li class="letterName J-city_item" data-code="41169" data-name="招远市" data-letter="zyuan">
+						招远市					</li>
+									<li class="letterName J-city_item" data-code="41193" data-name="邹城市" data-letter="zouc">
+						邹城市					</li>
+									<li class="letterName J-city_item" data-code="41179" data-name="诸城市" data-letter="zhuc">
+						诸城市					</li>
+									<li class="letterName J-city_item" data-code="41131" data-name="章丘市" data-letter="zqiu">
+						章丘市					</li>
+									<li class="letterName J-city_item" data-code="40675" data-name="肇东市" data-letter="zhaod">
+						肇东市					</li>
+									<li class="letterName J-city_item" data-code="40417" data-name="庄河市" data-letter="zhe">
+						庄河市					</li>
+									<li class="letterName J-city_item" data-code="41263" data-name="中牟县" data-letter="zm">
+						中牟县					</li>
+									<li class="letterName J-city_item" data-code="41596" data-name="资兴市" data-letter="zix">
+						资兴市					</li>
+									<li class="letterName J-city_item" data-code="3428" data-name="诸暨市" data-letter="zhujish">
+						诸暨市					</li>
+									<li class="letterName J-city_item" data-code="41471" data-name="钟祥市" data-letter="zhongx">
+						钟祥市					</li>
+									<li class="letterName J-city_item" data-code="41462" data-name="枣阳市" data-letter="zaoy">
+						枣阳市					</li>
+									<li class="letterName J-city_item" data-code="41454" data-name="枝江市" data-letter="zhij">
+						枝江市					</li>
+									<li class="letterName J-city_item" data-code="41687" data-name="廉江市" data-letter="zhanjiang">
+						廉江市					</li>
+									<li class="letterName J-city_item" data-code="41017" data-name="漳平县" data-letter="zhangping">
+						漳平县					</li>
+									<li class="letterName J-city_item" data-code="41098" data-name="樟树市" data-letter="zhangshu">
+						樟树市					</li>
+									<li class="letterName J-city_item" data-code="3321" data-name="昭通" data-letter="zt">
+						昭通					</li>
+									<li class="letterName J-city_item" data-code="40352" data-name="扎兰屯市" data-letter="zlt">
+						扎兰屯市					</li>
+									<li class="letterName J-city_item" data-code="2206" data-name="中卫" data-letter="zw">
+						中卫					</li>
+									<li class="letterName J-city_item" data-code="1638" data-name="张家港市" data-letter="zhjgsh">
+						张家港市					</li>
+									<li class="letterName J-city_item" data-code="40107" data-name="涿州市" data-letter="zhzhsh">
+						涿州市					</li>
+									<li class="letterName J-city_item" data-code="40039" data-name="遵化市" data-letter="zhsh">
+						遵化市					</li>
+							</ul>
+		
+		<!--		城市列表索引区块-->
+		<div class="indexer" id="letterIndexer">
+			<li class="city_summary_item" data-key="定位">
+				定位
+			</li>
+			<li class="city_summary_item" id="indexer-hot" data-key="历史">
+				历史
+			</li>
+							<li class="city_summary_item" data-key="热门">
+					热门
+				</li>
+										<li class="city_summary_item" data-key="A">
+					A				</li>
+							<li class="city_summary_item" data-key="B">
+					B				</li>
+							<li class="city_summary_item" data-key="C">
+					C				</li>
+							<li class="city_summary_item" data-key="D">
+					D				</li>
+							<li class="city_summary_item" data-key="E">
+					E				</li>
+							<li class="city_summary_item" data-key="F">
+					F				</li>
+							<li class="city_summary_item" data-key="G">
+					G				</li>
+							<li class="city_summary_item" data-key="H">
+					H				</li>
+							<li class="city_summary_item" data-key="J">
+					J				</li>
+							<li class="city_summary_item" data-key="K">
+					K				</li>
+							<li class="city_summary_item" data-key="L">
+					L				</li>
+							<li class="city_summary_item" data-key="M">
+					M				</li>
+							<li class="city_summary_item" data-key="N">
+					N				</li>
+							<li class="city_summary_item" data-key="P">
+					P				</li>
+							<li class="city_summary_item" data-key="Q">
+					Q				</li>
+							<li class="city_summary_item" data-key="R">
+					R				</li>
+							<li class="city_summary_item" data-key="S">
+					S				</li>
+							<li class="city_summary_item" data-key="T">
+					T				</li>
+							<li class="city_summary_item" data-key="W">
+					W				</li>
+							<li class="city_summary_item" data-key="X">
+					X				</li>
+							<li class="city_summary_item" data-key="Y">
+					Y				</li>
+							<li class="city_summary_item" data-key="Z">
+					Z				</li>
+					</div>
+		<div class="indexer-show" id="J-big-show-letter">
+		</div>
+	</article>
+</div>
+<script>
+//	alert('ok');
+	var TN_DATA = {
+		jumpUrl: "/{letter}",
+		searAjax: "/m2015/city/city/queryAjax"
+	}
+</script>
+
+        </div>
+        <!-- contain end next footer-->
+        
+     <!--    <script type="text/javascript">
+            var no_show_download_p_value = [15485,16276,14816,16194,14895,16238,16576,16670,16524,16525,16526,16527,16528,16529,16530,16531,16532,16533,16534,16238,16535,16667]; 
+            var no_show_slider_p_value = [16276]; 
+            var pageName="http://m.tuniu.com/m2015/city/city/index";
+        </script> -->
+       <!--  <input type="hidden" id="appTitle" name="appTitle" value="途牛旅游网" />
+                <div id="tn_app_top_bar" style="display: none;">
+                    <input id="top_bar_title" value="途牛旅游网" /><input id="top_bar_sub_title" value="" /><input id="top_bar_show_refresh" value="" /><input id="top_bar_show_search" value="" /><input id="top_bar_show_niuxin" value="" /><input id="support_magic_scroll" name="support_magic_scroll" value="0" />
+                </div> -->
+            <script>var globalAjaxControl = {"location":"true","justLocationIP":false,"jumpWhenLocationOver":"","hasJumpCallback":false,"user":false,"phone":false};</script>
+            <!-- <script src="../global/global.min.js"></script> -->
+
+<!-- <script type="text/javascript" src="../js/header.min.js"></script> -->
+</body>
+<script>
+    // window.COLLECT && window.COLLECT("","http://m.tuniu.com/m2015/city/city/index","","");
+</script>
+<!-- mTime: 2016-08-24 19:00:05 -->
+</html>
+<!-- <script src="//img1.tuniucdn.com/mj/2016082409/global/app_download.min.js"></script> -->

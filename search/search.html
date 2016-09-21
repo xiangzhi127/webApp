@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../css_reset/css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/search.css" />
+    <title>会员中心</title>
+    <script type="text/javascript">
+        //根据屏幕大小及dpi调整缩放和大小
+        (function() {
+            var scale = 1.0;
+            var ratio = 1;
+            if (window.devicePixelRatio >= 2) {
+                scale *= 0.5;
+                ratio *= 2;
+            }
+            var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+            document.write(text);
+            document.documentElement.style.fontSize = 50*ratio + "px";
+        })();
+    </script>
+    <meta name="keywords" content="">
+    <meta name="description" content="会员中心">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device"content="mobile">
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+    <header class="public-header" id="public-header">
+        <div class="ph-left">
+            <a class="go-to-back" href="javascript:history.back()" >
+                <span class="css-icon-back"></span>
+            </a>   
+        </div>
+        <div class="ph-center">
+            <input type="text"  class="search-input" placeholder="美食">
+        </div>
+        <div class="ph-right">
+            <span class="icon icon-meat icon-collect span-block" ></span>
+        </div>         
+    </header>
+</body>
+</html>

@@ -1,0 +1,344 @@
+/* icon-font --start*/
+@font-face {
+    font-family: "xiangle";
+    src: url("../../fonts/xiangle.eot?#iefix") format("embedded-opentype")
+        ,url("../../fonts/xiangle.woff") format("woff")
+        ,url("../../fonts/xiangle.ttf") format("truetype")
+        ,url("../../fonts/xiangle.svg") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: "xiangle";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+    border-radius: 10rem;
+}
+
+.icon-zhushi:before {
+    content: "\f024";
+}
+.icon-meat:before{
+    content: "\f0f5";
+}
+.icon-soul:before{
+    content: "\f004";
+}
+.icon-fruit:before{
+    content: "\f284";
+}
+.icon-drink:before{
+    content: "\f0fc";
+}
+.icon-time:before {
+    content: "\f185";
+}
+.icon-people:before{
+    content: "\f007";
+}
+.icon-function:before{
+    content: "\f09a";
+}
+.icon-taste:before {
+    content: "\f284";
+}
+.icon-cook:before {
+    content: "\f1b1";
+}
+/*icon-font --end*/
+body{
+    background-color: #f0efed;
+}
+/*头部开始*/
+.public-header{
+    background: #43c475;
+    color:#fff;
+    width: 100%;
+    height: 1.01rem;
+    border-bottom: 1px solid #21897d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+.public-header .ph-left{
+}
+.ph-left .go-to-back{
+    height: 1rem;
+    width: .45rem;
+    line-height: 1rem;
+    padding: 0 .3rem;
+}
+.ph-left .go-to-back .css-icon-back{
+    width: .45rem;
+    height: .45rem;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+}
+.css-icon-back:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: .07rem;
+    top: 0;
+    width: .4rem;
+    height: .4rem;
+    border-bottom: .04rem solid #fff;
+    border-left: .04rem solid #fff;
+    -webkit-transform: scaleY(0.8) rotateZ(45deg);
+    -moz-transform: scaleY(0.8) rotateZ(45deg);
+    -ms-transform: scaleY(0.8) rotateZ(45deg);
+}
+.public-header .ph-center{
+    -webkit-box-flex: 1;
+}
+.ph-center h2{
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1rem;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-header .ph-right{
+
+}
+.ph-right a.collect,a.details-nav{
+    display: inline-block;
+    height: 100%;
+    line-height: 0.5rem;
+    text-align: center;
+    width: .94rem;
+    color:#fff;
+}
+.ph-right .span-block{
+    display:block;
+}
+.ph-right .icon-collect,.icon-nav{
+    margin-top: 12px;
+    font-size: 0.4rem;
+}
+.ph-right .i-mean{
+    font-size: 0.25rem;
+}
+.nav-dropdown{
+    position: absolute;
+    right: 0rem;
+    top: 1.02rem;
+    width: 2rem;
+    background: #43c475;
+    opacity: .9;
+    z-index: 100;
+    overflow: hidden;
+    -webkit-transition: height .1s;
+}
+.nav-dropdown .details-ul{
+    overflow: auto;
+
+}
+.nav-dropdown .details-ul .details-li{
+    padding:0.15rem 0;
+}
+.details-li .details-a{
+    font-size: 0.4rem;
+    color:#fff;
+}
+.details-a span{
+    margin-left:0.35rem;
+}
+.details-a span.icon{
+    font-size:0.35rem;
+}
+.details-a span.i-mean{
+    font-size:0.3rem;
+}
+/*头部结束*/
+/*正文开始*/
+.sc-header{
+    font-size:0.3rem;
+    border-bottom: 1px solid #f0efed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    line-height: 1rem;
+    background: #fff;
+}
+.sc-header-left{
+
+}
+.select-label{
+    width: .4rem;
+    height: .4rem;
+    border-radius: 0.2rem;
+    display:inline-block;
+    /*background: #ccc;*/
+    background: #ff5000;
+    align-items: center;
+    margin:0 0.2rem;
+    vertical-align: middle;
+    position:relative;
+}
+.select-label:after {
+    content: '';
+    position: absolute;
+    width: 0.15rem;
+    height: 0.08rem;
+    background: transparent;
+    top: 0.12rem;
+    left: 0.1rem;
+    border: 0.03rem solid #fff;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.select-all,.select-none{
+    display:none;
+}
+
+.sc-header-center{
+    -webkit-box-flex: 1;
+    text-align:right;
+}
+.all-momey{}
+.sc-header-right{
+    background: #ff5000;
+    margin-left: .32rem;
+    color: #fff;
+}
+.sc-header-right p{
+    padding:0 0.4rem;
+}
+.to-pay-money{
+
+}
+.sc-body{
+    
+}
+.sc-ul{}
+.sc-ul li{
+    margin-bottom:0.2rem;
+    border-bottom: 1px solid #f0efed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    background: #fff;
+}
+.sc-body-left{
+    display: -webkit-box;
+    -webkit-box-align: center;
+}
+.select-one{}
+.sc-body-right{
+    -webkit-box-flex: 1;
+}
+.sc-flex{
+    display: -webkit-box;
+    width: 100%;
+}
+.sc-right-img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0.1rem 0 0.1rem 0.1rem;
+    background: #fff;
+    overflow: hidden;
+}
+.sc-right-img>a{
+    display:block;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    overflow: hidden;
+}
+.sc-right-img>a>img{
+    display: block;
+    height:100%;
+}
+.sc-right-content{
+    -webkit-box-flex: 1;
+    margin-top: 0.1rem;
+    font-size:0.3rem;
+    padding:0 0.2rem;
+    line-height: 0.8rem;
+}
+.sc-content-title{
+    border-bottom: 1px solid #f0efed;
+}
+.sc-content-title p{
+    text-align:center;
+}
+.sc-content-price{
+    border-bottom: 1px solid #f0efed;
+    display: -webkit-box;
+}
+.sc-content-price span{
+    -webkit-box-flex: 1;
+    display: block;
+}
+.single-price{
+    font-style:normal;
+}
+.sc-content-num{
+    border-bottom: 1px solid #f0efed;
+    display: -webkit-box;
+}
+.sc-content-num span{
+     -webkit-box-flex: 1;
+     display: block;
+}
+.count-num{
+  
+}
+.count-num button{
+    width: .6rem;
+    padding: 0;
+    outline: 0;
+    line-height: .6rem;
+    font-weight: lighter;
+    vertical-align: middle;
+
+}
+.num-0{
+    background-color: #dcdcdc;
+    color: #999;
+    border: 0;
+}
+.num-1{
+    border: .01rem solid #06c1ae;
+    background: 0;
+    color: #06c1ae;
+    box-sizing: border-box;
+}
+.count-num input{
+    -webkit-appearance: initial;
+    height: .6rem;
+    display: inline-block;
+    vertical-align: middle;
+    border: .02rem solid #DDD8CE;
+    border-radius: .06rem;
+    box-sizing: border-box;
+    line-height: .6rem;
+    text-align: center;
+    width: 1rem;
+    outline: 0;
+}
+.sc-content-all{
+    display: -webkit-box;
+}
+.sc-content-all span{
+    -webkit-box-flex: 1;
+    display: block;
+}
+.all-pay{
+   font-style:normal;
+}
+/*正文结束*/

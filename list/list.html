@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>美食分类</title>
+    <script type="text/javascript">
+        //根据屏幕大小及dpi调整缩放和大小
+        (function() {
+            var scale = 1.0;
+            var ratio = 1;
+            if (window.devicePixelRatio >= 2) {
+                scale *= 0.5;
+                ratio *= 2;
+            }
+            var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+            document.write(text);
+            document.documentElement.style.fontSize = 50*ratio + "px";
+        })();
+    </script>
+    <meta name="keywords" content="">
+    <meta name="description" content="美食分类">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device"content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css_reset/css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <style>
+        .gue-img img{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="public-header" id="public-header">
+        <div class="ph-left">
+            <a class="go-to-back" href="javascript:history.back()" >
+                <span class="css-icon-back"></span>
+            </a>   
+        </div>
+        <div class="ph-center">
+            <h2 class="title">美食分类</h2>
+        </div>
+        <div class="ph-right">
+            <a class="details-nav" href="">
+                <span class="icon icon-meat icon-nav span-block"></span>
+                <span class="i-mean span-block">导航</span>
+            </a>
+        </div>         
+        <div class="nav-dropdown" style="display:none">
+            <ul class="list-ul">
+                <li class="list-li">
+                    <a class="list-a" href="javascript:;">
+                        <span class="icon icon-meat icon-index"></span>
+                        <span class="i-mean">饭</span>
+                    </a>
+                </li> 
+                <li class="list-li">
+                    <a class="list-a" href="javascript:;">
+                        <span class="icon  icon-meat icon-bus"></span>
+                        <span class="i-mean">粥</span>
+                    </a>
+                </li>
+                <li class="list-li">
+                    <a  class="list-a" href="javascript:;">
+                        <span class="icon icon-meat icon-share"></span>
+                        <span class="i-mean">粉</span>
+                    </a>
+                </li>
+                <li class="list-li">
+                    <a class="list-a" href="javascript:;">
+                        <span class="icon icon-meat icon-index"></span>
+                        <span class="i-mean">饭</span>
+                    </a>
+                </li> 
+                <li class="list-li">
+                    <a class="list-a" href="javascript:;">
+                        <span class="icon  icon-meat icon-bus"></span>
+                        <span class="i-mean">粥</span>
+                    </a>
+                </li>
+                <li class="list-li">
+                    <a  class="list-a" href="javascript:;">
+                        <span class="icon icon-meat icon-share"></span>
+                        <span class="i-mean">粉</span>
+                    </a>
+                </li>
+                <li class="list-li">
+                    <a class="list-a" href="javascript:;">
+                        <span class="icon icon-meat icon-index"></span>
+                        <span class="i-mean">饭</span>
+                    </a>
+                </li> 
+                <li class="list-li">
+                    <a class="list-a" href="javascript:;">
+                        <span class="icon  icon-meat icon-bus"></span>
+                        <span class="i-mean">粥</span>
+                    </a>
+                </li>
+                <li class="list-li">
+                    <a  class="list-a" href="javascript:;">
+                        <span class="icon icon-meat icon-share"></span>
+                        <span class="i-mean">粉</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <section>
+            <div class="l-list">
+                <ul class="guess-list" id="guess-list">
+                    
+                </ul>
+            </div>
+        </section>
+    </div>
+    <textarea id="textarea" style="display:none">
+        <li class="guess-list-li">
+            <a href="" class="react" data-id="$couponid$">
+                <div class="gue-container">
+                    <div class="gue-img">
+                        <img src="$imgsrc$" alt="">
+                    </div>
+                    <div class="gue-right">
+                        <div class="line">$line$</div>
+                        <div class="title">$title$</div>
+                        <div class="price inline">
+                            <span class="strong-p">$price$</span>
+                            <span class="strong-color">$dw$</span> 
+                            <span class="satifaction">$satifaction$</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </textarea>
+    <script>
+        var JSON = {
+            url: "",
+            data: [{
+                couponid: "1",
+                imgsrc: "../images/fried-rice/dan-chaofan.jpg",
+                line: "蛋炒饭",
+                title: "蛋炒饭是一种既简单又好吃的主食,蛋炒饭是最普通的家常菜",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "2",
+                imgsrc: "../images/fried-rice/huotuijidan-chaofan.jpg",
+                line: "火腿煎蛋",
+                title: "火腿煎蛋是一道以鸡蛋、火腿肠等为主要食材制作的美食",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "3",
+                imgsrc: "../images/fried-rice/jiangyou-chaofan.jpg",
+                line: "酱油炒饭",
+                title: "油炒饭是一道家常主食,主要食材是米饭(冷饭更佳),配以肉粒、鸡蛋、葱花和酱油等炒至熟热",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "4",
+                imgsrc: "../images/fried-rice/tudou-chaofan.jpg",
+                line: "土豆炒饭",
+                title: "土豆炒饭是一种既简单又好吃的主食,蛋炒饭是最普通的家常菜",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },
+            {
+                couponid: "5",
+                imgsrc: "../images/fried-rice/xianggurouding-chaofan.jpg",
+                line: "香菇肉丁炒饭",
+                title: "香菇肉丁炒饭是一种既简单又好吃的主食",
+                price: 1,
+                dw:'元',
+                satifaction:'满意度90%'
+            },]
+        };
+        String.prototype.temp = function(obj) {
+            return this.replace(/\$\w+\$/gi, function(matchs) {
+                var returns = obj[matchs.replace(/\$/g, "")];       
+                return (returns + "") == "undefined"? "": returns;
+            });
+        };
+        var t=document.getElementById('textarea');
+        var ul=document.getElementById('guess-list');
+        var htmlList = ''
+            // textarea中的模板HTML
+            , htmlTemp = t.value;
+
+        JSON.data.forEach(function(object) {
+            htmlList += htmlTemp.temp(object);
+        });
+        ul.innerHTML = htmlList;
+    </script>
+</body>
+</html>

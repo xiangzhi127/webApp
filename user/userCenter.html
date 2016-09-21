@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../css_reset/css-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/userCenter.css" />
+    <title>会员中心</title>
+    <script type="text/javascript">
+        //根据屏幕大小及dpi调整缩放和大小
+        (function() {
+            var scale = 1.0;
+            var ratio = 1;
+            if (window.devicePixelRatio >= 2) {
+                scale *= 0.5;
+                ratio *= 2;
+            }
+            var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+            document.write(text);
+            document.documentElement.style.fontSize = 50*ratio + "px";
+        })();
+    </script>
+    <meta name="keywords" content="">
+    <meta name="description" content="会员中心">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device"content="mobile">
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+    <header class="public-header" id="public-header">
+        <div class="ph-left">
+            <a class="go-to-back" href="javascript:history.back()" >
+                <span class="css-icon-back"></span>
+            </a>   
+        </div>
+        <div class="ph-center">
+            <h2 class="title">我的</h2>
+        </div>
+        <div class="ph-right">
+            <a class="collect" href="" >
+                <span class="icon icon-meat icon-collect span-block" ></span>
+                <span class="i-mean span-block">首页</span>
+            </a>
+        </div>         
+    </header>
+    <div>
+        <a class="my-account"  href="">
+            <img src="images/my-photo.png"/>
+            <img class="avater" src="images/pic-default.png">
+            <div class="user-info more more-weak">
+                <p class="uname">yvp951828791<i class="level-icon level0"></i></p>
+                <p>账户余额：<strong>0</strong>元</p>
+            </div>
+        </a>
+    </div>
+
+    <div id="order-view"  class="order-view"> 
+        <ul class="order" > 
+            <li>
+                <a  href=""> 
+                    <span class="icon-meat"></span>
+                    <p >全部订单</p>
+                </a>
+            </li>
+            <li>
+                <a  href=""> 
+                    <span class="icon-meat"></span>
+                    <p>待付款</p> 
+                </a> 
+            </li>
+            <li>
+                <a  href="">
+                    <span class="icon-meat"></span>
+                    <p>待点评</p> 
+                </a>
+            </li>
+         </ul>  
+    </div>
+    <ul class="list">
+        <li>
+            <a class="react"  href="">
+                <div class="more more-weak">
+                    <span class="icon-meat"></span>
+                    <span>我的收藏</span>
+                    <span class="more-after"></span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="react"  href="">
+                <div class="more more-weak">
+                    <span class="icon-meat"></span>
+                    <span>我的抵用券</span>
+                    <span class="more-after"></span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="react"  href="">
+                <div class="more more-weak">
+                    <span class="icon-meat"></span>
+                    <span>我的抽奖单</span>
+                    <span class="more-after"></span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="react"  href="">
+                <div class="more more-weak">
+                    <span class="icon-meat"></span>
+                    <span>积分换礼品</span>
+                    <span class="more-after"></span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
